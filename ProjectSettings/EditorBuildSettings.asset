@@ -18,16 +18,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Lucha D.unity
     guid: 02a4c363ab0726f408d39025cb8b1282
   - enabled: 1
-    path: Assets/Scenes/Reino Divi.unity
+    path: Assets/Scenes/Reino divi.unity
     guid: 29b9bc19da134db4aa6597faeeafa68a
   - enabled: 1
-    path: Assets/Scenes/Reino Multi.unity
+    path: Assets/Scenes/Reino multi.unity
     guid: 489a01b8beafed74e9c4526bebb81544
   - enabled: 1
-    path: Assets/Scenes/Reino Resta.unity
+    path: Assets/Scenes/Reino resta.unity
     guid: 6e63d28c4fcf80749af9f6a0fb79021c
   - enabled: 1
-    path: Assets/Scenes/Reino Suma.unity
+    path: Assets/Scenes/Reino suma.unity
     guid: 7aec2895d11913f419b17ba31db147bd
   - enabled: 1
     path: Assets/Scenes/Lucha M.unity
