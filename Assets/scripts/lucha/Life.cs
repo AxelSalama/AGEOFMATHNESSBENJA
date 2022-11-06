@@ -11,8 +11,6 @@ public class Life : MonoBehaviour
 
     public bool correcta;
     public GameObject player;
-    public GameObject Heal;
-    public GameObject Object;
     public GameObject Ataque;
     public GameObject Escape;
     private bool isPressed = false;
@@ -104,18 +102,14 @@ public class Life : MonoBehaviour
     }
     IEnumerator AtaqueEnemigo()
     {
-
-        Heal.GetComponent<Button>().interactable = false;
+        
         Ataque.GetComponent<Button>().interactable = false;
-        Object.GetComponent<Button>().interactable = false;
         Escape.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(1);
         Debug.Log("Perdiste vida");
         yield return new WaitForSeconds(1);
         Debug.Log("volves a tener el control");
-        Heal.GetComponent<Button>().interactable = true;
         Ataque.GetComponent<Button>().interactable = true;
-        Object.GetComponent<Button>().interactable = true;
         Escape.GetComponent<Button>().interactable = true;
     }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EligeCuenta : MonoBehaviour
+public class EligeDivi : MonoBehaviour
 {
     public GameObject btnContinuar;
 
@@ -30,10 +30,10 @@ public class EligeCuenta : MonoBehaviour
     public void Start()
     {
      
-        //RandomizarDivi();
+        RandomizarDivi();
         //RandomizarResta();
         //RandomizarEnTexto();
-        RandomizarMulti();
+        //RandomizarMulti();
 
         correccionado.SetActive(false);
     }
@@ -56,8 +56,8 @@ public class EligeCuenta : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            //CorrecciónDivi();
-            CorrecciónMulti();
+            CorrecciónDivi();
+            //CorrecciónMulti();
             //CorrecciónResta();
             //CorrecciónSuma();
             Correccionado();           
