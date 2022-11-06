@@ -9051,6 +9051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Aldeano (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 988e683ad3263474f825bf708e9f4c9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 988e683ad3263474f825bf708e9f4c9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -23758,15 +23762,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_Controller
@@ -26335,9 +26339,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: carpafacheradeverdadposta
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3d71fa5d4e0247242952dfda9fb6579b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3d71fa5d4e0247242952dfda9fb6579b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.3
+      value: -13.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3d71fa5d4e0247242952dfda9fb6579b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26345,7 +26353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3d71fa5d4e0247242952dfda9fb6579b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -248.7
+      value: -245.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3d71fa5d4e0247242952dfda9fb6579b, type: 3}
       propertyPath: m_LocalRotation.x
