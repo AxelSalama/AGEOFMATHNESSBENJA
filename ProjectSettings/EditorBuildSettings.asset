@@ -6,15 +6,51 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu ppal.unity
-    guid: 62d08c6b9a2f4154e8549ba897eec648
+    path: Assets/Scenes/Barriles.unity
+    guid: 5eeeb08d4439f3448ab36b45d615a70f
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 1bbe32a7d5b526546a285052e8cfcb76
+    path: Assets/Scenes/Castillo.unity
+    guid: 04a2578ca9052a548b8cd8f819a3ae56
   - enabled: 1
-    path: Assets/Scenes/Reino multi.unity
-    guid: 961a64c51bce8e443a50b569d1e479b9
+    path: Assets/Scenes/dialogo.unity
+    guid: 50241f46385c51d48bead264c2dedcf6
+  - enabled: 1
+    path: Assets/Scenes/Lucha D.unity
+    guid: 02a4c363ab0726f408d39025cb8b1282
+  - enabled: 1
+    path: Assets/Scenes/Reino Divi.unity
+    guid: 29b9bc19da134db4aa6597faeeafa68a
+  - enabled: 1
+    path: Assets/Scenes/Reino Multi.unity
+    guid: 489a01b8beafed74e9c4526bebb81544
+  - enabled: 1
+    path: Assets/Scenes/Reino Resta.unity
+    guid: 6e63d28c4fcf80749af9f6a0fb79021c
+  - enabled: 1
+    path: Assets/Scenes/Reino Suma.unity
+    guid: 7aec2895d11913f419b17ba31db147bd
   - enabled: 1
     path: Assets/Scenes/Lucha M.unity
     guid: bb286b7810c88e548bb22e8511972139
+  - enabled: 1
+    path: Assets/Scenes/Lucha R.unity
+    guid: e4b8b230201a9904d83da58bb91739ce
+  - enabled: 1
+    path: Assets/Scenes/Lucha S.unity
+    guid: 28e5c619784db0d45912df49558398ab
+  - enabled: 1
+    path: Assets/Scenes/Menu ppal.unity
+    guid: 62d08c6b9a2f4154e8549ba897eec648
+  - enabled: 1
+    path: Assets/Scenes/ProyJeroBenja.unity
+    guid: 9c1a15fe475144943b8fe7a461dcd66b
+  - enabled: 1
+    path: Assets/Scenes/Pruebas.unity
+    guid: bc1101512b00cb94bb9e49971301e4a1
+  - enabled: 1
+    path: Assets/Scenes/roma.unity
+    guid: 309ee493a305a694384eafbac67b2dbe
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 1bbe32a7d5b526546a285052e8cfcb76
   m_configObjects: {}
