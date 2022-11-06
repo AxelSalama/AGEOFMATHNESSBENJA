@@ -42,11 +42,6 @@ public class Dialogue : MonoBehaviour
     {
         index = 0;
         StartCoroutine(TypeLine());
-        movimiento.velocidadMovimiento = 0f;
-        movimiento.velocidadRotacion = 0f;
-        movimiento.fuerzaDeSalto = 0f;
-        movimiento.puedoSaltar = false;
-
     }
 
     IEnumerator TypeLine()
