@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b484fd34b5bdf24b8dc2a21d589f059, type: 3}
-  m_Name: PotionData2
+  m_Script: {fileID: 11500000, guid: 788134f2f04ad174685976b0663ce28c, type: 3}
+  m_Name: ImposibleData
   m_EditorClassIdentifier: 
-  contador: 0
-  isgrabbed: 0
-  Pota: {fileID: 3426646169852909923, guid: e50d6e8778a063d4ab6a51b0139d2a0c, type: 3}
+  estebtn: 0

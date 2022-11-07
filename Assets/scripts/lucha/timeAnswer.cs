@@ -16,10 +16,29 @@ public class timeAnswer : MonoBehaviour
     public Text txtTiempo;
     public Text txtCorreccionando;
     public InputField Respuesta;
+    public DificultadData facil;
+    public DificultadData dificil;
+    public DificultadData imposible;
 
     public bool isCounting;
     public bool dejaSeguir;
     public bool inpEscribir;
+
+    void Start()
+    {
+        if(facil.estebtn == true)
+        {
+            time = 20f;
+        }
+        if (dificil.estebtn == true)
+        {
+            time = 10f;
+        }
+        if (imposible.estebtn == true)
+        {
+            time = 5f;
+        }
+    }
 
 
     void Update()
