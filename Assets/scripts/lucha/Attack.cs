@@ -29,7 +29,7 @@ public class Attack : MonoBehaviour
     public void Activar()
     {
         Cuenta.SetActive(true);
-        btnContinuar.transform.localPosition = new Vector3(115, -115, 0);
+        btnContinuar.transform.localPosition = new Vector3(115, -145, 0);
         Ataque.SetActive(false);
         Escape.transform.localScale = new Vector3(1, 1, 1);
         Escape.transform.localPosition = new Vector3(375, -220, 0);

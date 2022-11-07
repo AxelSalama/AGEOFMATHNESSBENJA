@@ -115,10 +115,10 @@ public class EligeDivi : MonoBehaviour
         Escape.transform.localScale = new Vector3(2.2f, 2.2f, 2.2f);
         Escape.transform.localPosition = new Vector3(280, -195, 0);
 
-        //RandomizarDivi();
+        RandomizarDivi();
         //RandomizarEnTexto();  
         //RandomizarResta();
-        RandomizarMulti();
+        //RandomizarMulti();
 
         
 

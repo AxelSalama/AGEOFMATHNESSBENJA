@@ -1528,7 +1528,6 @@ GameObject:
   - component: {fileID: 162293393}
   - component: {fileID: 162293392}
   - component: {fileID: 162293391}
-  - component: {fileID: 162293390}
   - component: {fileID: 162293394}
   - component: {fileID: 162293395}
   - component: {fileID: 162293396}
@@ -1559,30 +1558,6 @@ RectTransform:
   m_AnchoredPosition: {x: 524, y: -32}
   m_SizeDelta: {x: 181.14313, y: 65.14346}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &162293390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162293388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a8a31ca0f25bb14ba731ee6f19e089e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btnContinuar: {fileID: 162293388}
-  N1Text: {fileID: 803102301}
-  N2Text: {fileID: 698825152}
-  operacion: {fileID: 164638597}
-  Respuesta: {fileID: 701222964}
-  res: 0
-  correccionando: {fileID: 1877614526}
-  correccionado: {fileID: 1877614525}
-  correcta: 0
-  Cuenta: {fileID: 1955610530}
-  Ataque: {fileID: 1031176407}
-  Escape: {fileID: 240618204}
 --- !u!114 &162293391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1623,7 +1598,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162293390}
+      - m_Target: {fileID: 162293396}
         m_MethodName: Reset
         m_Mode: 1
         m_Arguments:

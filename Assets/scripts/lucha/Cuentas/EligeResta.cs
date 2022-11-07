@@ -12,7 +12,7 @@ public class EligeResta : MonoBehaviour
     public Text operacion;
 
     int minInt = 1;
-    int maxInt = 10;
+    int maxInt = 25;
 
     int randomnum;
     int randomnum2;
@@ -31,8 +31,8 @@ public class EligeResta : MonoBehaviour
     {
 
         //RandomizarDivi();
-        //RandomizarResta();
-        RandomizarEnTexto();
+        RandomizarResta();
+        //RandomizarEnTexto();
         //RandomizarMulti();
 
         correccionado.SetActive(false);
@@ -58,8 +58,8 @@ public class EligeResta : MonoBehaviour
         {
             //CorrecciónDivi();
             //CorrecciónMulti();
-            //CorrecciónResta();
-            CorrecciónSuma();
+            CorrecciónResta();
+            //CorrecciónSuma();
             Correccionado();
         }
 
@@ -116,8 +116,8 @@ public class EligeResta : MonoBehaviour
         Escape.transform.localPosition = new Vector3(280, -195, 0);
 
         //RandomizarDivi();
-        RandomizarEnTexto();
-        //RandomizarResta();
+        //RandomizarEnTexto();
+        RandomizarResta();
         //RandomizarMulti();
 
 
@@ -136,7 +136,7 @@ public class EligeResta : MonoBehaviour
     {
 
         randomnum = Random.Range(maxInt, minInt);
-        randomnum2 = Random.Range(randomnum, minInt);
+        randomnum2 = Random.Range(randomnum - 1, minInt);
 
         string n1text = randomnum.ToString();
         string n2text = randomnum2.ToString();
