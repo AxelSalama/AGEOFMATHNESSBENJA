@@ -27,8 +27,27 @@ public class EligeSuma : MonoBehaviour
 
     public bool correcta;
 
+    public DificultadData facil;
+    public DificultadData dificil;
+    public DificultadData imposible;
+
     public void Start()
     {
+        if(facil.estebtn == true)
+        {
+            minInt = 2;
+            maxInt = 20;
+        }
+        if (dificil.estebtn == true)
+        {
+            minInt = 15;
+            maxInt = 40;
+        }
+        if (imposible.estebtn == true)
+        {
+            minInt = 40;
+            maxInt = 99;
+        }
 
         //RandomizarDivi();
         //RandomizarResta();
