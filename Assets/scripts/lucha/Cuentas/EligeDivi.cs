@@ -27,9 +27,27 @@ public class EligeDivi : MonoBehaviour
 
     public bool correcta;
 
+    public DificultadData nivel;
+
     public void Start()
     {
-     
+        if (nivel.facil == true)
+        {
+            minInt = 2;
+            maxInt = 25;
+        }
+        else if (nivel.dificil == true)
+        {
+            minInt = 15;
+            maxInt = 75;
+        }
+        else if (nivel.imposible == true)
+        {
+            minInt = 33;
+            maxInt = 99;
+
+        }
+
         RandomizarDivi();
         //RandomizarResta();
         //RandomizarEnTexto();
@@ -199,8 +217,8 @@ public class EligeDivi : MonoBehaviour
 
     public void RandomizarDivi()
     {
-          maxInt = 50;
-            minInt = 10;
+          //maxInt = 50;
+          //  minInt = 10;
             randomnum = Random.Range(maxInt, minInt);
 
             bool esPrimo = true;
