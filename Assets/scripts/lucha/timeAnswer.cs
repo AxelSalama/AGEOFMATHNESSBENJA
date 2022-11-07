@@ -22,6 +22,24 @@ public class timeAnswer : MonoBehaviour
     public bool inpEscribir;
 
 
+    
+
+    void Start()
+    {
+        if (facil.estebtn == true)
+        {
+            time = 20f;
+        }
+        else if (dificil.estebtn == true)
+        {
+            time = 10f;
+        }
+        else if (imposible.estebtn == true)
+        {
+            time = 5f;
+        }
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
@@ -76,6 +94,18 @@ public class timeAnswer : MonoBehaviour
         isCounting = true;
         dejaSeguir = false;
         inpEscribir = true;
-        time = 10;
+
+        if (facil == true)
+        {
+            time = 20f;
+        }
+        if (dificil == true)
+        {
+            time = 10f;
+        }
+        if (imposible == true)
+        {
+            time = 5f;
+        }
     }
 }
