@@ -21,22 +21,21 @@ public class timeAnswer : MonoBehaviour
     public bool dejaSeguir;
     public bool inpEscribir;
 
-
-    
+    public DificultadData nivel;
 
     void Start()
     {
-        if (facil.estebtn == true)
+        if (nivel.facil == true)
         {
             time = 20f;
         }
-        else if (dificil.estebtn == true)
+        else if (nivel.dificil == true)
         {
             time = 10f;
         }
-        else if (imposible.estebtn == true)
+        else if (nivel.imposible == true)
         {
-            time = 5f;
+            time = 10f;
         }
     }
 
@@ -95,15 +94,15 @@ public class timeAnswer : MonoBehaviour
         dejaSeguir = false;
         inpEscribir = true;
 
-        if (facil == true)
+        if (nivel.facil == true)
         {
             time = 20f;
         }
-        if (dificil == true)
+        else if (nivel.dificil == true)
         {
             time = 10f;
         }
-        if (imposible == true)
+        else if (nivel.imposible == true)
         {
             time = 5f;
         }

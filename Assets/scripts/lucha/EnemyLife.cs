@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyLife : MonoBehaviour
 {
-    public int health = 40;
+    public int health;
     public EnemyData datosenemigos;
     public GameObject enemyPrefab;
     public InputField Res;
@@ -31,9 +31,12 @@ public class EnemyLife : MonoBehaviour
     public EnemyData duende;
     public EnemyData elfo;
 
+    public DificultadData nivel;
 
     public void Start()
     {
+        
+
         if (PlayerPrefs.GetInt("valor") == 1)
         {
             datosenemigos = duende;
@@ -49,6 +52,18 @@ public class EnemyLife : MonoBehaviour
         {
             datosenemigos = ogro;
             enemyPrefab = Ogro;
+        }
+        if (nivel.facil == true)
+        {
+            health = 50;
+        }
+        else if (nivel.dificil == true)
+        {
+            health = 100;
+        }
+        else if (nivel.imposible == true)
+        {
+            health = 150;
         }
     }
 
@@ -125,7 +140,6 @@ public class EnemyLife : MonoBehaviour
         {
             resul = int.Parse(N1) / int.Parse(N2);
         }
-
         string Resint = Res.text;
 
         if (resul == int.Parse(Resint))

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Life : MonoBehaviour
 {
-    public int health = 40;
+    public int health;
     public InputField Res;
 
     public bool correcta;
@@ -22,6 +22,26 @@ public class Life : MonoBehaviour
     public Text operacion;
 
     int autodamage;
+
+
+    public DificultadData nivel;
+     
+    void Start()
+    {
+
+        if (nivel.facil == true)
+        {
+            health = 50;
+        }
+        else if (nivel.dificil == true)
+        {
+            health = 100;
+        }
+        else if (nivel.imposible == true)
+        {
+            health = 150;
+        }
+    }
 
     void Update()
     {
