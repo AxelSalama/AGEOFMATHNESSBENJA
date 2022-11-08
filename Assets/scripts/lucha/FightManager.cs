@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class FightManager : MonoBehaviour
 {
-    //public Transform SpawnerPoint;
     public GameObject Elfo;
     public GameObject Ogro;
     public GameObject Duende;
+    public GameObject Duende2;
     public EnemyData ogro;
     public EnemyData duende;
     public EnemyData elfo;
+    public EnemyData duende2;
     public EnemyLife enemylife;
     void Start()
     {
@@ -34,11 +35,11 @@ public class FightManager : MonoBehaviour
             Ogro.transform.eulerAngles = new Vector3(0, -90, 0);
             Ogro.transform.localScale = new Vector3(1, 1, 1);
         }
-    }
-
-    
-    void Update()
-    {
-        
+        if (PlayerPrefs.GetInt("valor") == 4)
+        {
+            Instantiate(Duende2, new Vector3(14, 0, 14), Quaternion.identity);
+            Duende2.transform.eulerAngles = new Vector3(0, -90, 0);
+            Duende2.transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 }

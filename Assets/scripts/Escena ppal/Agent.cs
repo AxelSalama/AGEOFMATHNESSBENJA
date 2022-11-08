@@ -9,33 +9,32 @@ public class Agent : MonoBehaviour
     public Transform destinationTransform;
     public NavMeshAgent agente;
     public Animator anim;
-    public float DistanceToPLayer;
+    public float DistanceToPlayer;
     
-    // Start is called before the first frame update
+    
     void Start()
     {
         agente.speed = 0;
         anim.SetBool("Idle", true);
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         agente.destination = destinationTransform.position;
-        DistanceToPLayer = Vector3.Distance(transform.position, destinationTransform.position);
+        DistanceToPlayer = agente.remainingDistance;
     }
 
 
-    void OnTriggerEnter(Collider Other)
+    void OnTriggerStay(Collider Other)
     {
         if (Other.gameObject.tag == "Player")
         {
             agente.speed = 25;
             anim.SetBool("Idle", false);
 
-            if (Vector3.Distance(transform.position, destinationTransform.position) < 3)
+            if (agente.remainingDistance < 10)
             {
-                SceneManager.LoadScene("Lucha M");
+                SceneManager.LoadScene("Lucha S");
                 Debug.Log("Esta cerca el enemigo");
                 agente.speed = 0;
                 
