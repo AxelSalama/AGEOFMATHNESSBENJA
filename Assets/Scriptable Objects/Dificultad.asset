@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Dificultad
   m_EditorClassIdentifier: 
   facil: 0
-  dificil: 0
-  imposible: 1
+  dificil: 1
+  imposible: 0

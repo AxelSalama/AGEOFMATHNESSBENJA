@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FightManager : MonoBehaviour
 {
-    //public Transform SpawnerPoint;
     public GameObject Elfo;
     public GameObject Ogro;
     public GameObject Duende;
@@ -42,11 +41,5 @@ public class FightManager : MonoBehaviour
             Duende2.transform.eulerAngles = new Vector3(0, -90, 0);
             Duende2.transform.localScale = new Vector3(1, 1, 1);
         }
-    }
-
-    
-    void Update()
-    {
-        
     }
 }
