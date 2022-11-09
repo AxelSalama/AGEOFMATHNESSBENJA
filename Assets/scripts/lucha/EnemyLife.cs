@@ -30,6 +30,7 @@ public class EnemyLife : MonoBehaviour
     public EnemyData ogro;
     public EnemyData duende;
     public EnemyData elfo;
+    public EscenaData escenas;
 
     public DificultadData nivel;
 
@@ -104,17 +105,33 @@ public class EnemyLife : MonoBehaviour
     {
         datosenemigos.derrotado = true;
         DestroyImmediate(enemyPrefab, true);
-        StartCoroutine(CambiandoEscena());
-    }
-    IEnumerator CambiandoEscena()
-    {
-        yield return new WaitForSeconds(2);
         CambioEscena();
     }
+     
 
     void CambioEscena()
     {
-        SceneManager.LoadScene("Reino suma");
+        if (escenas.multi == true)
+        {
+            SceneManager.LoadScene("Reino multi");
+            escenas.multi = false;
+        }
+        if (escenas.resta == true)
+        {
+            SceneManager.LoadScene("Reino resta");
+            escenas.resta = false;
+        }
+        if (escenas.suma == true)
+        {
+            SceneManager.LoadScene("Reino suma");
+            escenas.suma = false;
+        }
+        if (escenas.divi == true)
+        {
+            SceneManager.LoadScene("Reino divi");
+            escenas.divi = false;
+        }
+
     }
     int resul;
 

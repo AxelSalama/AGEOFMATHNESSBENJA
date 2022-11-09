@@ -20,6 +20,7 @@ public class Life : MonoBehaviour
     public Text Cuenta1;
     public Text Cuenta2;
     public Text operacion;
+    public EscenaData escenas;
 
     int autodamage;
 
@@ -74,7 +75,26 @@ public class Life : MonoBehaviour
 
     void CambioEscena()
     {
-        SceneManager.LoadScene("Reino multi");
+        if(escenas.multi == true)
+        {
+            SceneManager.LoadScene("Reino multi");
+            escenas.multi = false;
+        }
+        if (escenas.resta == true)
+        {
+            SceneManager.LoadScene("Reino resta");
+            escenas.resta = false;
+        }
+        if (escenas.suma == true)
+        {
+            SceneManager.LoadScene("Reino suma");
+            escenas.suma = false;
+        }
+        if (escenas.divi == true)
+        {
+            SceneManager.LoadScene("Reino divi");
+            escenas.divi = false;
+        }
     }
     int resul;
 
