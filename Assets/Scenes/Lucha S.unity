@@ -1757,6 +1757,7 @@ MonoBehaviour:
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
+  escenas: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &162293395
 MonoBehaviour:
@@ -1786,6 +1787,7 @@ MonoBehaviour:
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  escenas: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &162293396
 MonoBehaviour:
@@ -3148,6 +3150,7 @@ MonoBehaviour:
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  escenas: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &270585005
 MonoBehaviour:
@@ -5906,6 +5909,7 @@ MonoBehaviour:
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
+  escenas: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &606345179
 GameObject:
@@ -5958,6 +5962,7 @@ MonoBehaviour:
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
   duende2: {fileID: 11400000, guid: ddb9ab3f9f5afa84e8e06e9ae5585409, type: 2}
+  escenas: {fileID: 0}
   enemylife: {fileID: 628352314}
 --- !u!1001 &614409340
 PrefabInstance:
@@ -6142,6 +6147,7 @@ MonoBehaviour:
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  escenas: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!4 &628352315
 Transform:
@@ -7014,6 +7020,7 @@ MonoBehaviour:
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  escenas: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1001 &703959162
 PrefabInstance:
@@ -14888,7 +14895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361847833}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 499.6, y: 0, z: 31.9}
+  m_LocalPosition: {x: 345.5, y: 0, z: 31.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1560694724}
@@ -16527,13 +16534,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: DUENDEBIEN (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16575,22 +16578,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 6d8bb2fe7c91d514fbb6b578ab1ed974, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
 --- !u!4 &1560694724 stripped
@@ -16599,121 +16586,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1560694723}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1560694725 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: b00d50cee618b1349889fe6364bb3719,
-    type: 3}
-  m_PrefabInstance: {fileID: 1560694723}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1560694726 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: b00d50cee618b1349889fe6364bb3719,
-    type: 3}
-  m_PrefabInstance: {fileID: 1560694723}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &1560694727
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560694725}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 10
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &1560694728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560694725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56a0fe8c1abcc2342a70fc6dccf51cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemydata: {fileID: 11400000, guid: ddb9ab3f9f5afa84e8e06e9ae5585409, type: 2}
---- !u!114 &1560694729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560694725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 124fde7d6b8a12a42919bc4241accebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destinationTransform: {fileID: 0}
-  agente: {fileID: 1560694727}
-  anim: {fileID: 1560694726}
-  DistanceToPlayer: 0
---- !u!65 &1560694730
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560694725}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 7.789783, z: 170.2527}
-  m_Center: {x: 8.6301246e-13, y: 4.2219853, z: 84.62609}
---- !u!65 &1560694731
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560694725}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.1952837, z: 2.14034}
-  m_Center: {x: -1.7571116e-17, y: 0.60707694, z: 0.042452365}
---- !u!65 &1560694732
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560694725}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7900814, y: 9.759864, z: 2.1340716}
-  m_Center: {x: 0.039596513, y: 4.951882, z: 0.04344029}
---- !u!65 &1560694733
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560694725}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7876661, y: 1.1374627, z: 2.1206353}
-  m_Center: {x: 0.032535154, y: 0.6384283, z: 0.048559677}
 --- !u!1001 &1573121053
 PrefabInstance:
   m_ObjectHideFlags: 0
