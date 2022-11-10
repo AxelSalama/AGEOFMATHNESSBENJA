@@ -54,6 +54,12 @@ public class Life : MonoBehaviour
             esCorrecta();
             damage();
             slider.value = health;
+
+            if (health <= 0)
+            {
+                Die();
+                slider.value = 0;
+            }
         } 
 
         if (Input.GetKeyDown(KeyCode.Return) && isPressed == false)
@@ -78,31 +84,31 @@ public class Life : MonoBehaviour
     void Die()
     {
         gameObject.transform.localPosition = new Vector3(1000, 1000, 123);
-        StartCoroutine(CambiandoEscena());
+        CambioEscena();
         
     }
 
     void CambioEscena()
     {
-        if(escenas.multi == true)
-        {
-            SceneManager.LoadScene("Reino multi");
-            escenas.multi = false;
-        }
-        if (escenas.resta == true)
-        {
-            SceneManager.LoadScene("Reino resta");
-            escenas.resta = false;
-        }
-        if (escenas.suma == true)
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Lucha S")
         {
             SceneManager.LoadScene("Reino suma");
-            escenas.suma = false;
         }
-        if (escenas.divi == true)
+        else if (sceneName == "Lucha R")
+        {
+            SceneManager.LoadScene("Reino resta");
+        }
+        else if (sceneName == "Lucha M")
+        {
+            SceneManager.LoadScene("Reino multi");
+        }
+        else if (sceneName == "Lucha D")
         {
             SceneManager.LoadScene("Reino divi");
-            escenas.divi = false;
         }
     }
     int resul;
