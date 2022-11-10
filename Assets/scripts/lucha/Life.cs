@@ -49,8 +49,6 @@ public class Life : MonoBehaviour
     {
         if (timeAnswer.sinTime == true)
         {
-            
-            
             esCorrecta();
             damage();
             slider.value = health;

@@ -35,10 +35,29 @@ public class Agent : MonoBehaviour
 
             if (agente.remainingDistance < 10)
             {
-                SceneManager.LoadScene("Lucha S");
-                Debug.Log("Esta cerca el enemigo");
+                Scene currentScene = SceneManager.GetActiveScene();
+
+                string sceneName = currentScene.name;
+
+                if (sceneName == "Reino suma")
+                {
+                    SceneManager.LoadScene("Lucha S");
+                }
+                else if (sceneName == "Reino resta")
+                {
+                    SceneManager.LoadScene("Lucha R");
+                }
+                else if (sceneName == "Reino multi")
+                {
+                    SceneManager.LoadScene("Lucha M");
+                }
+                else if (sceneName == "Reino divi")
+                {
+                    SceneManager.LoadScene("Lucha D");
+                }
+
                 agente.speed = 0;
-                
+                Debug.Log("Estas cerca");
             }
         }
     }
