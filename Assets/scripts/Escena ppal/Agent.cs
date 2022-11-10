@@ -10,8 +10,9 @@ public class Agent : MonoBehaviour
     public NavMeshAgent agente;
     public Animator anim;
     public float DistanceToPlayer;
-    
-    
+    public EscenaData escenas;
+
+
     void Start()
     {
         agente.speed = 0;

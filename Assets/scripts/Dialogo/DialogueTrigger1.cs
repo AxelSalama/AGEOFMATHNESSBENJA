@@ -20,7 +20,7 @@ public class DialogueTrigger1 : MonoBehaviour
     {
         if(dialogo.PasaronCosas == true)
         {
-            SceneManager.LoadScene("Reino suma");
+            SceneManager.LoadScene("Levels");
         }
     }
 }
