@@ -5954,11 +5954,6 @@ MonoBehaviour:
   Ogro: {fileID: 1455430466}
   Duende: {fileID: 1432544184}
   Duende2: {fileID: 1361847833}
-  ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
-  duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
-  elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
-  duende2: {fileID: 11400000, guid: ddb9ab3f9f5afa84e8e06e9ae5585409, type: 2}
-  enemylife: {fileID: 628352314}
 --- !u!1001 &614409340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14876,8 +14871,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361847833}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 499.6, y: 0, z: 31.9}
-  m_LocalScale: {x: 2.4152822, y: 2.4152822, z: 2.4152822}
+  m_LocalPosition: {x: 383.1, y: 0, z: 26.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1560694724}
   m_Father: {fileID: 0}
@@ -16521,7 +16516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.4
+      value: 17.8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16529,7 +16524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 53.5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalRotation.x
@@ -16565,15 +16560,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: b00d50cee618b1349889fe6364bb3719, type: 3}
       propertyPath: m_Controller

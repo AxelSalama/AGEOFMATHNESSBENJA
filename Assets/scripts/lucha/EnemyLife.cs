@@ -104,17 +104,31 @@ public class EnemyLife : MonoBehaviour
     {
         datosenemigos.derrotado = true;
         DestroyImmediate(enemyPrefab, true);
-        StartCoroutine(CambiandoEscena());
-    }
-    IEnumerator CambiandoEscena()
-    {
-        yield return new WaitForSeconds(2);
         CambioEscena();
     }
 
     void CambioEscena()
     {
-        SceneManager.LoadScene("Reino suma");
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Lucha S")
+        {
+            SceneManager.LoadScene("Reino suma");
+        }
+        else if (sceneName == "Lucha R")
+        {
+            SceneManager.LoadScene("Reino resta");
+        }
+        else if (sceneName == "Lucha M")
+        {
+            SceneManager.LoadScene("Reino multi");
+        }
+        else if (sceneName == "Lucha D")
+        {
+            SceneManager.LoadScene("Reino divi");
+        }
     }
     int resul;
 

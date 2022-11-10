@@ -68,13 +68,32 @@ public class Life : MonoBehaviour
     void Die()
     {
         gameObject.transform.localPosition = new Vector3(1000, 1000, 123);
-        StartCoroutine(CambiandoEscena());
+        CambioEscena();
         
     }
 
     void CambioEscena()
     {
-        SceneManager.LoadScene("Reino multi");
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Lucha S")
+        {
+            SceneManager.LoadScene("Reino suma");
+        }
+        else if (sceneName == "Lucha R")
+        {
+            SceneManager.LoadScene("Reino resta");
+        }
+        else if (sceneName == "Lucha M")
+        {
+            SceneManager.LoadScene("Reino multi");
+        }
+        else if (sceneName == "Lucha D")
+        {
+            SceneManager.LoadScene("Reino divi");
+        }
     }
     int resul;
 

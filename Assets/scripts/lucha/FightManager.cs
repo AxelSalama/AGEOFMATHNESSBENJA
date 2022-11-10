@@ -8,11 +8,6 @@ public class FightManager : MonoBehaviour
     public GameObject Ogro;
     public GameObject Duende;
     public GameObject Duende2;
-    public EnemyData ogro;
-    public EnemyData duende;
-    public EnemyData elfo;
-    public EnemyData duende2;
-    public EnemyLife enemylife;
     void Start()
     {
         
