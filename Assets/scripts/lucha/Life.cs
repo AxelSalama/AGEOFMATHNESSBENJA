@@ -24,6 +24,7 @@ public class Life : MonoBehaviour
 
     int autodamage;
 
+    public timeAnswer timeAnswer;
 
     public DificultadData nivel;
      
@@ -46,6 +47,14 @@ public class Life : MonoBehaviour
 
     void Update()
     {
+        if (timeAnswer.sinTime == true)
+        {
+            
+            
+            esCorrecta();
+            damage();
+            slider.value = health;
+        } 
 
         if (Input.GetKeyDown(KeyCode.Return) && isPressed == false)
         {
@@ -121,7 +130,13 @@ public class Life : MonoBehaviour
             resul = int.Parse(N1) / int.Parse(N2);
         }
 
+
+        if (Res.text == "")
+        {
+            Res.text = "-1";
+        }
         string Resint = Res.text;
+
 
         if (resul == int.Parse(Resint))
         {
@@ -137,8 +152,8 @@ public class Life : MonoBehaviour
     {
         StartCoroutine(AtaqueEnemigo());
         health -= resul;
-        Debug.Log(health);
-        
+        //Debug.Log(health);
+
     }
     IEnumerator AtaqueEnemigo()
     {
@@ -146,9 +161,9 @@ public class Life : MonoBehaviour
         Ataque.GetComponent<Button>().interactable = false;
         Escape.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(1);
-        Debug.Log("Perdiste vida");
+        //Debug.Log("Perdiste vida");
         yield return new WaitForSeconds(1);
-        Debug.Log("volves a tener el control");
+        //Debug.Log("volves a tener el control");
         Ataque.GetComponent<Button>().interactable = true;
         Escape.GetComponent<Button>().interactable = true;
     }

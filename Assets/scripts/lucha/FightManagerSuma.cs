@@ -12,11 +12,9 @@ public class FightManagerSuma : MonoBehaviour
     public EnemyData duende;
     public EnemyData elfo;
     public EnemyData duende2;
-    public EscenaData escenas;
     public EnemyLife enemylife;
     void Start()
     {
-        escenas.suma = true;
         if (PlayerPrefs.GetInt("valor") == 1)
         {
             Instantiate(Duende, new Vector3(14, 0, 14), Quaternion.identity);
