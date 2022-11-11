@@ -20,11 +20,17 @@ public class LogicaPies : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        movimiento.puedoSaltar = true;
+        if (other.gameObject.name == "ground")
+        {
+            movimiento.puedoSaltar = true;
+        }  
     }
 
     private void OnTriggerExit(Collider other)
     {
-        movimiento.puedoSaltar = false;
+        if (other.gameObject.name == "ground")
+        {
+            movimiento.puedoSaltar = false;
+        }
     }
 }

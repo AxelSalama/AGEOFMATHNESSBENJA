@@ -3106,7 +3106,7 @@ MonoBehaviour:
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
   escenas: {fileID: 0}
-  timeAnswer: {fileID: 0}
+  timeAnswer: {fileID: 1697165616}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &162293395
 MonoBehaviour:
@@ -3710,7 +3710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &185179828
 Light:
   m_ObjectHideFlags: 0
@@ -8195,6 +8195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sillas (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3719997
@@ -9141,6 +9145,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: -0.20485535, y: 0.03, z: -0.034059897}
+--- !u!1 &536721409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e08795232a9a04642be50283ca847dc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1575251490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &536721413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536721409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda38b17635d0094b9b75936f12747a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1679559880}
 --- !u!1 &551901997
 GameObject:
   m_ObjectHideFlags: 0
@@ -10424,7 +10447,7 @@ MonoBehaviour:
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
   escenas: {fileID: 0}
-  timeAnswer: {fileID: 0}
+  timeAnswer: {fileID: 1697165616}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &606345179
 GameObject:
@@ -17874,6 +17897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sillas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.832
@@ -19999,7 +20026,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988381413}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a52c9cb6e869a6b4a8b99727fb55fca5, type: 3}
   m_Name: 
@@ -24413,7 +24440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1206232164
 Light:
   m_ObjectHideFlags: 0
@@ -28668,6 +28695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sillas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.605
@@ -31720,7 +31751,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604675120}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3368db4d24c00ab4992f69106c1e51d7, type: 3}
   m_Name: 
@@ -31818,6 +31849,10 @@ PrefabInstance:
     - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_Name
       value: Sillas (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32433,6 +32468,10 @@ PrefabInstance:
     - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_Name
       value: Sillas (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33773,6 +33812,10 @@ PrefabInstance:
     - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_Name
       value: Sillas
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x

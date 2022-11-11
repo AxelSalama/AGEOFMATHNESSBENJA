@@ -287,8 +287,9 @@ GameObject:
   - component: {fileID: 8883276}
   - component: {fileID: 8883275}
   - component: {fileID: 8883274}
+  - component: {fileID: 8883278}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,6 +368,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8883278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda38b17635d0094b9b75936f12747a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1679559880}
 --- !u!1001 &11608563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10384,7 +10398,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988381413}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a52c9cb6e869a6b4a8b99727fb55fca5, type: 3}
   m_Name: 
@@ -16448,7 +16462,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604675120}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3368db4d24c00ab4992f69106c1e51d7, type: 3}
   m_Name: 
@@ -16465,8 +16479,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1388929, y: 0.4529872, z: 0.8806051}
-  m_Center: {x: 0.005679488, y: 0.13323641, z: -0.009902954}
+  m_Size: {x: 1.1388929, y: 0.6918663, z: 0.8806051}
+  m_Center: {x: 0.0056794877, y: 0.013796886, z: -0.009902954}
 --- !u!1001 &1606920823
 PrefabInstance:
   m_ObjectHideFlags: 0
