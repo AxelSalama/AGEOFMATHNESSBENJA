@@ -27,9 +27,27 @@ public class EligeMulti : MonoBehaviour
 
     public bool correcta;
 
+    public DificultadData nivel;
+
     public void Start()
     {
-     
+        if (nivel.facil == true)
+        {
+            minInt = 2;
+            maxInt = 10;
+        }
+        else if (nivel.dificil == true)
+        {
+            minInt = 4;
+            maxInt = 20;
+        }
+        else if (nivel.imposible == true)
+        {
+            minInt = 10;
+            maxInt = 50;
+
+        }
+
         //RandomizarDivi();
         //RandomizarResta();
         //RandomizarEnTexto();

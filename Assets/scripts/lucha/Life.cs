@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Life : MonoBehaviour
 {
-    public int health = 40;
+    public int health;
     public InputField Res;
 
     public bool correcta;
@@ -20,11 +20,45 @@ public class Life : MonoBehaviour
     public Text Cuenta1;
     public Text Cuenta2;
     public Text operacion;
+    public EscenaData escenas;
 
     int autodamage;
 
+    public timeAnswer timeAnswer;
+
+    public DificultadData nivel;
+     
+    void Start()
+    {
+
+        if (nivel.facil == true)
+        {
+            health = 50;
+        }
+        else if (nivel.dificil == true)
+        {
+            health = 100;
+        }
+        else if (nivel.imposible == true)
+        {
+            health = 150;
+        }
+    }
+
     void Update()
     {
+        if (timeAnswer.sinTime == true)
+        {
+            esCorrecta();
+            damage();
+            slider.value = health;
+
+            if (health <= 0)
+            {
+                Die();
+                slider.value = 0;
+            }
+        } 
 
         if (Input.GetKeyDown(KeyCode.Return) && isPressed == false)
         {
@@ -48,13 +82,31 @@ public class Life : MonoBehaviour
     void Die()
     {
         gameObject.transform.localPosition = new Vector3(1000, 1000, 123);
-        StartCoroutine(CambiandoEscena());
-        
+        CambioEscena(); 
     }
 
     void CambioEscena()
     {
-        SceneManager.LoadScene("Reino multi");
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Lucha S")
+        {
+            SceneManager.LoadScene("Reino suma");
+        }
+        else if (sceneName == "Lucha R")
+        {
+            SceneManager.LoadScene("Reino resta");
+        }
+        else if (sceneName == "Lucha M")
+        {
+            SceneManager.LoadScene("Reino multi");
+        }
+        else if (sceneName == "Lucha D")
+        {
+            SceneManager.LoadScene("Reino divi");
+        }
     }
     int resul;
 
@@ -81,7 +133,13 @@ public class Life : MonoBehaviour
             resul = int.Parse(N1) / int.Parse(N2);
         }
 
+
+        if (Res.text == "")
+        {
+            Res.text = "-1";
+        }
         string Resint = Res.text;
+
 
         if (resul == int.Parse(Resint))
         {
@@ -97,8 +155,8 @@ public class Life : MonoBehaviour
     {
         StartCoroutine(AtaqueEnemigo());
         health -= resul;
-        Debug.Log(health);
-        
+        //Debug.Log(health);
+
     }
     IEnumerator AtaqueEnemigo()
     {
@@ -106,9 +164,9 @@ public class Life : MonoBehaviour
         Ataque.GetComponent<Button>().interactable = false;
         Escape.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(1);
-        Debug.Log("Perdiste vida");
+        //Debug.Log("Perdiste vida");
         yield return new WaitForSeconds(1);
-        Debug.Log("volves a tener el control");
+        //Debug.Log("volves a tener el control");
         Ataque.GetComponent<Button>().interactable = true;
         Escape.GetComponent<Button>().interactable = true;
     }

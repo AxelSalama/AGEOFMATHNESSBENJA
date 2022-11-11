@@ -10,7 +10,7 @@ public class timeAnswer : MonoBehaviour
     //Si no contesta antes de los 10 segundos el tiempo se frena en 0 y en el text corrección 
     //aparece se te acabo el tiempo y se habilita el btnContinuar.
 
-    float time;
+    public float time;
     public GameObject btnContinuar;
     public GameObject Correcionando;
     public Text txtTiempo;
@@ -21,6 +21,25 @@ public class timeAnswer : MonoBehaviour
     public bool dejaSeguir;
     public bool inpEscribir;
 
+    public DificultadData nivel;
+
+    public bool sinTime = false;
+
+    void Start()
+    {
+        if (nivel.facil == true)
+        {
+            time = 20f;
+        }
+        else if (nivel.dificil == true)
+        {
+            time = 10f;
+        }
+        else if (nivel.imposible == true)
+        {
+            time = 10f;
+        }
+    }
 
     void Update()
     {
@@ -67,6 +86,7 @@ public class timeAnswer : MonoBehaviour
             isCounting = false;
             dejaSeguir = true;
             inpEscribir = false;
+            sinTime = true;
         }
      
     }
@@ -76,6 +96,18 @@ public class timeAnswer : MonoBehaviour
         isCounting = true;
         dejaSeguir = false;
         inpEscribir = true;
-        time = 10;
+
+        if (nivel.facil == true)
+        {
+            time = 20f;
+        }
+        else if (nivel.dificil == true)
+        {
+            time = 10f;
+        }
+        else if (nivel.imposible == true)
+        {
+            time = 5f;
+        }
     }
 }

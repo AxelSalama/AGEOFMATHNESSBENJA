@@ -48,7 +48,10 @@ public class Movement : MonoBehaviour
             anim.SetBool("correr", false);
         }
 
-
+        if (transform.position.y <= -2)
+        {
+            transform.position = new Vector3(0, 5, 0) ;
+        }
 
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
@@ -69,6 +72,11 @@ public class Movement : MonoBehaviour
         else
         {
             EstoyCayendo();
+        }
+
+        if (transform.position.y <= -2)
+        {
+            transform.position = new Vector3(0, 5, 0);
         }
     }
 

@@ -1579,6 +1579,7 @@ MonoBehaviour:
   correccionando: {fileID: 1877614526}
   correccionado: {fileID: 1877614525}
   correcta: 0
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
   Cuenta: {fileID: 1955610530}
   Ataque: {fileID: 1031176407}
   Escape: {fileID: 240618204}
@@ -1712,6 +1713,7 @@ MonoBehaviour:
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &162293395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1740,6 +1742,7 @@ MonoBehaviour:
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &164638594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,7 +2680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280, y: -195}
+  m_AnchoredPosition: {x: 280, y: -184}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240618206
@@ -3076,6 +3079,7 @@ MonoBehaviour:
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &270585005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5764,6 +5768,7 @@ MonoBehaviour:
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &606345179
 GameObject:
   m_ObjectHideFlags: 0
@@ -5997,6 +6002,7 @@ MonoBehaviour:
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!4 &628352315
 Transform:
   m_ObjectHideFlags: 0
@@ -6868,6 +6874,7 @@ MonoBehaviour:
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1001 &703959162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10596,7 +10603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -126, y: -192}
+  m_AnchoredPosition: {x: -126, y: -181}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031176409
@@ -10734,6 +10741,7 @@ MonoBehaviour:
   correccionando: {fileID: 1877614526}
   correccionado: {fileID: 1877614525}
   correcta: 0
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
   Cuenta: {fileID: 1955610530}
   Ataque: {fileID: 1031176407}
   Escape: {fileID: 240618204}
@@ -11995,14 +12003,14 @@ RectTransform:
   m_GameObject: {fileID: 1116349345}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 573}
-  m_LocalScale: {x: 1, y: 0.5399957, z: 1}
+  m_LocalScale: {x: 1, y: 0.9226366, z: 1}
   m_Children: []
   m_Father: {fileID: 1184072532}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.0999756, y: -171}
+  m_AnchoredPosition: {x: 6.0999756, y: -196}
   m_SizeDelta: {x: 30.543701, y: -193.20212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116349347
@@ -17241,6 +17249,7 @@ MonoBehaviour:
   isCounting: 0
   dejaSeguir: 0
   inpEscribir: 0
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1001 &1698844663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19023,6 +19032,7 @@ MonoBehaviour:
   correccionando: {fileID: 1877614526}
   correccionado: {fileID: 1877614525}
   correcta: 0
+  nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
   Cuenta: {fileID: 1955610530}
   Ataque: {fileID: 1031176407}
   Escape: {fileID: 240618204}

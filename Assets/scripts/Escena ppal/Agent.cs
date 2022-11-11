@@ -9,36 +9,55 @@ public class Agent : MonoBehaviour
     public Transform destinationTransform;
     public NavMeshAgent agente;
     public Animator anim;
-    public float DistanceToPLayer;
-    
-    // Start is called before the first frame update
+    public float DistanceToPlayer;
+    public EscenaData escenas;
+
+
     void Start()
     {
         agente.speed = 0;
         anim.SetBool("Idle", true);
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         agente.destination = destinationTransform.position;
-        DistanceToPLayer = Vector3.Distance(transform.position, destinationTransform.position);
+        DistanceToPlayer = agente.remainingDistance;
     }
 
 
-    void OnTriggerEnter(Collider Other)
+    void OnTriggerStay(Collider Other)
     {
         if (Other.gameObject.tag == "Player")
         {
             agente.speed = 25;
             anim.SetBool("Idle", false);
 
-            if (Vector3.Distance(transform.position, destinationTransform.position) < 3)
+            if (agente.remainingDistance < 10)
             {
-                SceneManager.LoadScene("Lucha M");
-                Debug.Log("Esta cerca el enemigo");
+                Scene currentScene = SceneManager.GetActiveScene();
+
+                string sceneName = currentScene.name;
+
+                if (sceneName == "Reino suma")
+                {
+                    SceneManager.LoadScene("Lucha S");
+                }
+                else if (sceneName == "Reino resta")
+                {
+                    SceneManager.LoadScene("Lucha R");
+                }
+                else if (sceneName == "Reino multi")
+                {
+                    SceneManager.LoadScene("Lucha M");
+                }
+                else if (sceneName == "Reino divi")
+                {
+                    SceneManager.LoadScene("Lucha D");
+                }
+
                 agente.speed = 0;
-                
+                Debug.Log("Estas cerca");
             }
         }
     }

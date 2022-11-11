@@ -27,8 +27,27 @@ public class EligeResta : MonoBehaviour
 
     public bool correcta;
 
+
+    public DificultadData nivel;
+
     public void Start()
     {
+        if (nivel.facil == true)
+        {
+            minInt = 2;
+            maxInt = 15;
+        }
+        else if (nivel.dificil == true)
+        {
+            minInt = 15;
+            maxInt = 40;
+        }
+        else if (nivel.imposible == true)
+        {
+            minInt = 40;
+            maxInt = 99;
+
+        }
 
         //RandomizarDivi();
         RandomizarResta();
