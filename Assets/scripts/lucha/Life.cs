@@ -82,8 +82,7 @@ public class Life : MonoBehaviour
     void Die()
     {
         gameObject.transform.localPosition = new Vector3(1000, 1000, 123);
-        CambioEscena();
-        
+        CambioEscena(); 
     }
 
     void CambioEscena()

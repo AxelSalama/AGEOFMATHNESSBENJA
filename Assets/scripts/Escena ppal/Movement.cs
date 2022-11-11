@@ -73,6 +73,11 @@ public class Movement : MonoBehaviour
         {
             EstoyCayendo();
         }
+
+        if (transform.position.y <= -2)
+        {
+            transform.position = new Vector3(0, 5, 0);
+        }
     }
 
     public void EstoyCayendo()

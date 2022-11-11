@@ -1758,7 +1758,7 @@ MonoBehaviour:
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
   escenas: {fileID: 0}
-  timeAnswer: {fileID: 0}
+  timeAnswer: {fileID: 1697165616}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &162293395
 MonoBehaviour:
@@ -5908,8 +5908,8 @@ MonoBehaviour:
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
-  escenas: {fileID: 0}
-  timeAnswer: {fileID: 0}
+  escenas: {fileID: 11400000, guid: d3c34ee3ea6c7984295e8c2925b51c28, type: 2}
+  timeAnswer: {fileID: 1697165616}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &606345179
 GameObject:
