@@ -9,7 +9,7 @@ public class Life : MonoBehaviour
     public int health;
     public InputField Res;
 
-    public bool correcta;
+    public bool correcta = true;
     public GameObject player;
     public GameObject Ataque;
     public GameObject Escape;
@@ -34,24 +34,31 @@ public class Life : MonoBehaviour
         if (nivel.facil == true)
         {
             health = 50;
+            slider.minValue = 100;
         }
         else if (nivel.dificil == true)
         {
             health = 100;
+            slider.minValue = 50;
         }
         else if (nivel.imposible == true)
         {
             health = 150;
+            slider.minValue = 50;
         }
+
+        slider.value = health + slider.minValue;
     }
 
     void Update()
     {
+        
         if (timeAnswer.sinTime == true)
         {
             esCorrecta();
+            Debug.Log(health);
             damage();
-            slider.value = health;
+            slider.value = health + slider.minValue;
 
             if (health <= 0)
             {
@@ -68,7 +75,8 @@ public class Life : MonoBehaviour
             if (correcta == false)
             {
                 damage();
-                slider.value = health;
+                slider.value = health + slider.minValue;
+                Debug.Log(health);
             }
 
             if (health <= 0)
@@ -109,6 +117,7 @@ public class Life : MonoBehaviour
         }
     }
     int resul;
+    bool divi;
 
     void esCorrecta()
     {
@@ -131,6 +140,8 @@ public class Life : MonoBehaviour
         else if (operacion.text == "/")
         {
             resul = int.Parse(N1) / int.Parse(N2);
+            divi = true;
+            
         }
 
 
@@ -148,14 +159,18 @@ public class Life : MonoBehaviour
         else
         {
             correcta = false;
+            if (divi == true)
+            {
+                resul = resul * 5;
+            }
         }
-
+       
     }
     public void damage()
     {
         StartCoroutine(AtaqueEnemigo());
         health -= resul;
-        //Debug.Log(health);
+       
 
     }
     IEnumerator AtaqueEnemigo()

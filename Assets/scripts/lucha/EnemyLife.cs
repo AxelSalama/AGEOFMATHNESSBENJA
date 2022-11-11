@@ -56,15 +56,21 @@ public class EnemyLife : MonoBehaviour
         if (nivel.facil == true)
         {
             health = 50;
+            slider.minValue = 100;
         }
         else if (nivel.dificil == true)
         {
             health = 100;
+            slider.minValue = 50;
         }
         else if (nivel.imposible == true)
         {
             health = 150;
+            slider.minValue = 50;
         }
+
+        slider.value = health + slider.minValue;
+
     }
 
 
@@ -81,7 +87,7 @@ public class EnemyLife : MonoBehaviour
             if (correcta == true)
             {
                 damage();
-                slider.value = health;
+                slider.value = health + slider.minValue; 
             }
 
             if (health <= 0)
@@ -94,8 +100,9 @@ public class EnemyLife : MonoBehaviour
 
     public void damage()
     {
-        dañop = Res.text;
-        daño = int.Parse(dañop);
+        //dañop = Res.text;
+        //daño = int.Parse(dañop);
+        daño = resul;
         health -= daño;
         
     }
@@ -131,7 +138,7 @@ public class EnemyLife : MonoBehaviour
         }
     }
     int resul;
-
+    bool divi;
     public void esCorrecta()
     {
         N1 = Cuenta1.text;
@@ -153,16 +160,22 @@ public class EnemyLife : MonoBehaviour
         else if (operacion.text == "/")
         {
             resul = int.Parse(N1) / int.Parse(N2);
+            divi = true;
         }
         string Resint = Res.text;
 
         if (resul == int.Parse(Resint))
         {
             correcta = true;
+            if (divi == true)
+            {
+                resul = resul * 5;
+            }
         }
         else
         {
             correcta = false;
+
         }
      
     }

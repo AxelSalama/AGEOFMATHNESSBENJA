@@ -1688,6 +1688,8 @@ MonoBehaviour:
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
+  escenas: {fileID: 0}
+  timeAnswer: {fileID: 1697165616}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &162293395
 MonoBehaviour:
@@ -3121,9 +3123,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 40
+  m_MaxValue: 150
   m_WholeNumbers: 0
-  m_Value: 40
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5740,9 +5742,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 40
+  m_MaxValue: 150
   m_WholeNumbers: 0
-  m_Value: 40
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5768,6 +5770,8 @@ MonoBehaviour:
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
+  escenas: {fileID: 0}
+  timeAnswer: {fileID: 1697165616}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &606345179
 GameObject:
@@ -5815,10 +5819,7 @@ MonoBehaviour:
   Elfo: {fileID: 1322021533}
   Ogro: {fileID: 1455430466}
   Duende: {fileID: 1432544184}
-  ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
-  duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
-  elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
-  enemylife: {fileID: 628352314}
+  Duende2: {fileID: 0}
 --- !u!1001 &614409340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17254,6 +17255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da52036f26d34654793114887fa0c1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 0
   btnContinuar: {fileID: 162293388}
   Correcionando: {fileID: 1877614525}
   txtTiempo: {fileID: 2131535284}
@@ -17263,6 +17265,7 @@ MonoBehaviour:
   dejaSeguir: 0
   inpEscribir: 0
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
+  sinTime: 0
 --- !u!1001 &1698844663
 PrefabInstance:
   m_ObjectHideFlags: 0
