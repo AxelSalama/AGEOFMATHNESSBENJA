@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 253a64173ff66af4bb948ad14396b883, type: 2}
+  - {fileID: 2100000, guid: 37e88e9823e6b0a45bbbc6da94bf2e66, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,10 +121,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7092d6b59877e4db5653e8c5d03a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydata: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  health: 40
+  datosenemigos: {fileID: 0}
+  enemyPrefab: {fileID: 0}
   Res: {fileID: 0}
   correcta: 0
-  enemy: {fileID: 7684408496038437203}
   Cuenta1: {fileID: 0}
   Cuenta2: {fileID: 0}
   operacion: {fileID: 0}
+  isPressed: 0
+  slider: {fileID: 0}
+  Elfo: {fileID: 0}
+  Ogro: {fileID: 0}
+  Duende: {fileID: 0}
+  ogro: {fileID: 0}
+  duende: {fileID: 0}
+  elfo: {fileID: 0}
+  nivel: {fileID: 0}
