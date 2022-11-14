@@ -1955,9 +1955,11 @@ MonoBehaviour:
   Elfo: {fileID: 0}
   Ogro: {fileID: 0}
   Duende: {fileID: 0}
+  Rey: {fileID: 329726309}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  rey: {fileID: 11400000, guid: aee848d0642118e4d98f0cb588a37934, type: 2}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &164638594
 GameObject:
@@ -3024,9 +3026,11 @@ MonoBehaviour:
   Elfo: {fileID: 0}
   Ogro: {fileID: 0}
   Duende: {fileID: 0}
+  Rey: {fileID: 329726309}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  rey: {fileID: 11400000, guid: aee848d0642118e4d98f0cb588a37934, type: 2}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &270585005
 MonoBehaviour:
@@ -3614,6 +3618,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311315479}
   m_Mesh: {fileID: 4300002, guid: aa95d9efb14d4ef45ae0daf6c6ba5749, type: 3}
+--- !u!1 &329726309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100082, guid: 5bd69d6c74f9bc74886d507c02fdb310,
+    type: 3}
+  m_PrefabInstance: {fileID: 1942592698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &339489731
 GameObject:
   m_ObjectHideFlags: 0
@@ -6980,9 +6990,11 @@ MonoBehaviour:
   Elfo: {fileID: 0}
   Ogro: {fileID: 0}
   Duende: {fileID: 0}
+  Rey: {fileID: 329726309}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  rey: {fileID: 11400000, guid: aee848d0642118e4d98f0cb588a37934, type: 2}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!4 &628352315
 Transform:
@@ -8460,9 +8472,11 @@ MonoBehaviour:
   Elfo: {fileID: 0}
   Ogro: {fileID: 0}
   Duende: {fileID: 0}
+  Rey: {fileID: 329726309}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  rey: {fileID: 11400000, guid: aee848d0642118e4d98f0cb588a37934, type: 2}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &707397432
 GameObject:

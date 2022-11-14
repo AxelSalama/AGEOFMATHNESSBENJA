@@ -27,21 +27,37 @@ public class EnemyLife : MonoBehaviour
     public GameObject Elfo;
     public GameObject Ogro;
     public GameObject Duende;
+    public GameObject Duende2;
+    public GameObject Rey;
+    public GameObject EnemigoResta1;
+    public GameObject EnemigoResta2;
+    public GameObject EnemigoResta3;
     public EnemyData ogro;
     public EnemyData duende;
+    public EnemyData duende2;
     public EnemyData elfo;
+    public EnemyData rey;
+    public EnemyData enemigoresta1;
+    public EnemyData enemigoresta2;
+    public EnemyData enemigoresta3;
 
     public DificultadData nivel;
 
     public void Start()
     {
-        
+        Scene currentScene = SceneManager.GetActiveScene();
 
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Lucha M")
+        {
+            datosenemigos = rey;
+            enemyPrefab = Rey;
+        }
         if (PlayerPrefs.GetInt("valor") == 1)
         {
             datosenemigos = duende;
             enemyPrefab = Duende;
-
         }
         if (PlayerPrefs.GetInt("valor") == 2)
         {
@@ -52,6 +68,26 @@ public class EnemyLife : MonoBehaviour
         {
             datosenemigos = ogro;
             enemyPrefab = Ogro;
+        }
+        if (PlayerPrefs.GetInt("valor") == 4)
+        {
+            datosenemigos = duende2;
+            enemyPrefab = Duende2;
+        }
+        if (PlayerPrefs.GetInt("valor") == 7)
+        {
+            datosenemigos = enemigoresta1;
+            enemyPrefab = EnemigoResta1;
+        }
+        if (PlayerPrefs.GetInt("valor") == 8)
+        {
+            datosenemigos = enemigoresta2;
+            enemyPrefab = EnemigoResta2;
+        }
+        if (PlayerPrefs.GetInt("valor") == 9)
+        {
+            datosenemigos = enemigoresta3;
+            enemyPrefab = EnemigoResta3;
         }
         if (nivel.facil == true)
         {
@@ -87,7 +123,9 @@ public class EnemyLife : MonoBehaviour
             if (correcta == true)
             {
                 damage();
-                slider.value = health + slider.minValue; 
+                slider.value = health + slider.minValue;
+                correcta = false;
+                
             }
 
             if (health <= 0)

@@ -93,16 +93,7 @@ public class Movement : MonoBehaviour
     //    transform.Translate(0, 0, y * Time.deltaTime * velocidadMovimiento * 2);
     //}
 
-    private void OnCollisionEnter(Collision col)
-    {
-
-        if (col.gameObject.tag == "Enemigo")
-        {
-            PlayerPrefs.SetInt("valor", col.gameObject.GetComponent<enemigo>().enemydata.orden);
-            //SceneManager.LoadScene("Lucha");
-        }
-        
-    }
+    
     private void OnTriggerEnter(Collider Other)
     {
         if (Other.gameObject.tag == "Enemigo")
