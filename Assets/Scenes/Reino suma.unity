@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.8840257, g: 0.6989735, b: 0.5278062, a: 1}
+  m_IndirectSpecularColor: {r: 0.8840259, g: 0.6989073, b: 0.5278078, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8213,7 +8213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677403723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -0, z: 179.93}
+  m_LocalPosition: {x: -0.1, y: 0, z: 179.93}
   m_LocalScale: {x: 8.162261, y: 6.1515, z: 7.0573487}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14761,6 +14761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PuertaParedCastillo
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d25beb8ffe4a6df4893a3be5570f73b3, type: 3}
+      propertyPath: m_TagString
+      value: castillo
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d25beb8ffe4a6df4893a3be5570f73b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.48555
@@ -14829,11 +14833,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142545368}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.16440146, y: 0.036869977, z: 0.2081297}
-  m_Center: {x: 0.0000000069849193, y: 0.008434871, z: 0.047668256}
+  m_Size: {x: 0.26375887, y: 0.31862724, z: 0.2081297}
+  m_Center: {x: -0.015058221, y: 0.03788022, z: 0.04766826}
 --- !u!1001 &1144337782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26756,7 +26760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976680232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 3, z: -306}
+  m_LocalPosition: {x: 7, y: 3, z: 115.3}
   m_LocalScale: {x: 3, y: 6, z: 3}
   m_Children:
   - {fileID: 1447549402}

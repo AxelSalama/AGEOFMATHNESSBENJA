@@ -20,7 +20,7 @@ public class Dialogue : MonoBehaviour
         textComponent.text = string.Empty;
         StartDialogue();
         PasaronCosas = false;
-}
+    }
 
     
     void Update()

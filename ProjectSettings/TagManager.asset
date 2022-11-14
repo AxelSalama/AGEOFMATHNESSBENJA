@@ -13,6 +13,7 @@ TagManager:
   - 2
   - 3
   - NPC
+  - castillo
   layers:
   - Default
   - TransparentFX

@@ -43,7 +43,7 @@ public class Life : MonoBehaviour
         }
         else if (nivel.imposible == true)
         {
-            health = 150;
+            health = 100;
             slider.minValue = 50;
         }
 

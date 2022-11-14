@@ -38,13 +38,13 @@ public class EligeDivi : MonoBehaviour
         }
         else if (nivel.dificil == true)
         {
-            minInt = 15;
-            maxInt = 75;
+            minInt = 2;
+            maxInt = 50;
         }
         else if (nivel.imposible == true)
         {
-            minInt = 33;
-            maxInt = 99;
+            minInt = 2;
+            maxInt = 75;
 
         }
 

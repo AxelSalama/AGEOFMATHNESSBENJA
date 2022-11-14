@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788134f2f04ad174685976b0663ce28c, type: 3}
   m_Name: Dificultad
   m_EditorClassIdentifier: 
-  facil: 1
-  dificil: 0
+  facil: 0
+  dificil: 1
   imposible: 0

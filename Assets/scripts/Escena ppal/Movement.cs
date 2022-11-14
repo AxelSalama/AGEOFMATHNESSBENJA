@@ -101,6 +101,7 @@ public class Movement : MonoBehaviour
             PlayerPrefs.SetInt("valor", col.gameObject.GetComponent<enemigo>().enemydata.orden);
             //SceneManager.LoadScene("Lucha");
         }
+        
     }
     private void OnTriggerEnter(Collider Other)
     {
@@ -112,6 +113,11 @@ public class Movement : MonoBehaviour
             PlayerPrefs.SetInt("valor", Other.gameObject.GetComponent<enemigo>().enemydata.orden);
             
         }
+        if (Other.gameObject.tag == "castillo")
+        {
+            SceneManager.LoadScene("Reino resta");
+        }
+
 
         //}
     }
