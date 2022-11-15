@@ -14,19 +14,19 @@ public class FightManagerResta : MonoBehaviour
         if(PlayerPrefs.GetInt("valor")== 7)
         {
             Instantiate(EnemigoResta1, new Vector3(15, 0, 15), Quaternion.identity);
-            EnemigoResta1.transform.eulerAngles = new Vector3(0, 0, 0);
+            EnemigoResta1.transform.eulerAngles = new Vector3(0, -90, 0);
             EnemigoResta1.transform.localScale = new Vector3(1, 1, 1);
         }
         if (PlayerPrefs.GetInt("valor") == 8)
         {
             Instantiate(EnemigoResta2, new Vector3(15, 0, 15), Quaternion.identity);
-            EnemigoResta2.transform.eulerAngles = new Vector3(0, 0, 0);
+            EnemigoResta2.transform.eulerAngles = new Vector3(0, -90, 0);
             EnemigoResta2.transform.localScale = new Vector3(1, 1, 1);
         }
         if (PlayerPrefs.GetInt("valor") == 9)
         {
             Instantiate(EnemigoResta2, new Vector3(15, 0, 15), Quaternion.identity);
-            EnemigoResta2.transform.eulerAngles = new Vector3(0, 0, 0);
+            EnemigoResta2.transform.eulerAngles = new Vector3(0, -90, 0);
             EnemigoResta2.transform.localScale = new Vector3(1, 1, 1);
         }
     }

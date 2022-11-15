@@ -32,6 +32,12 @@ public class EnemyLife : MonoBehaviour
     public GameObject EnemigoResta1;
     public GameObject EnemigoResta2;
     public GameObject EnemigoResta3;
+    public GameObject EnemigoMulti1;
+    public GameObject EnemigoMulti2;
+    public GameObject EnemigoMulti3;
+    public GameObject EnemigoDivi1;
+    public GameObject EnemigoDivi2;
+    public GameObject EnemigoDivi3;
     public EnemyData ogro;
     public EnemyData duende;
     public EnemyData duende2;
@@ -40,6 +46,12 @@ public class EnemyLife : MonoBehaviour
     public EnemyData enemigoresta1;
     public EnemyData enemigoresta2;
     public EnemyData enemigoresta3;
+    public EnemyData enemigomulti1;
+    public EnemyData enemigomulti2;
+    public EnemyData enemigomulti3;
+    public EnemyData enemigodivi1;
+    public EnemyData enemigodivi2;
+    public EnemyData enemigodivi3;
 
     public DificultadData nivel;
 
@@ -88,6 +100,36 @@ public class EnemyLife : MonoBehaviour
         {
             datosenemigos = enemigoresta3;
             enemyPrefab = EnemigoResta3;
+        }
+        if (PlayerPrefs.GetInt("valor") == 10)
+        {
+            datosenemigos = enemigomulti1;
+            enemyPrefab = EnemigoMulti1;
+        }
+        if (PlayerPrefs.GetInt("valor") == 11)
+        {
+            datosenemigos = enemigomulti2;
+            enemyPrefab = EnemigoMulti2;
+        }
+        if (PlayerPrefs.GetInt("valor") == 12)
+        {
+            datosenemigos = enemigomulti3;
+            enemyPrefab = EnemigoMulti3;
+        }
+        if (PlayerPrefs.GetInt("valor") == 13)
+        {
+            datosenemigos = enemigodivi1;
+            enemyPrefab = EnemigoDivi1;
+        }
+        if (PlayerPrefs.GetInt("valor") == 14)
+        {
+            datosenemigos = enemigodivi2;
+            enemyPrefab = EnemigoDivi2;
+        }
+        if (PlayerPrefs.GetInt("valor") == 15)
+        {
+            datosenemigos = enemigodivi3;
+            enemyPrefab = EnemigoDivi3;
         }
         if (nivel.facil == true)
         {
