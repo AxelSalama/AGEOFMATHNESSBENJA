@@ -11,6 +11,7 @@ public class EnemyLife : MonoBehaviour
     public EnemyData datosenemigos;
     public GameObject enemyPrefab;
     public InputField Res;
+    public Animator animJugador;
     int daño;
     string dañop;
 
@@ -167,7 +168,7 @@ public class EnemyLife : MonoBehaviour
                 damage();
                 slider.value = health + slider.minValue;
                 correcta = false;
-                
+                StartCoroutine(AtaqueJugador());
             }
 
             if (health <= 0)
@@ -184,7 +185,7 @@ public class EnemyLife : MonoBehaviour
         //daño = int.Parse(dañop);
         daño = resul;
         health -= daño;
-        
+        animJugador.SetBool("Atacaste", true);
     }
 
     void Die()
@@ -192,6 +193,11 @@ public class EnemyLife : MonoBehaviour
         datosenemigos.derrotado = true;
         DestroyImmediate(enemyPrefab, true);
         CambioEscena();
+    }
+    IEnumerator AtaqueJugador()
+    {
+        yield return new WaitForSeconds(1.5f);
+        animJugador.SetBool("Atacaste", false);
     }
 
     void CambioEscena()

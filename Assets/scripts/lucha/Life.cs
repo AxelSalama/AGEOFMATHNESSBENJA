@@ -8,6 +8,11 @@ public class Life : MonoBehaviour
 {
     public int health;
     public InputField Res;
+    public Animator animOgro;
+    public Animator animOgro2;
+    public Animator animOgro3;
+    public Animator animOgro4;
+    public Animator animRey;
 
     public bool correcta = true;
     public GameObject player;
@@ -77,6 +82,7 @@ public class Life : MonoBehaviour
                 damage();
                 slider.value = health + slider.minValue;
                 Debug.Log(health);
+                StartCoroutine(AtaqueEnemigo());
             }
 
             if (health <= 0)
@@ -170,20 +176,22 @@ public class Life : MonoBehaviour
     {
         StartCoroutine(AtaqueEnemigo());
         health -= resul;
+        animOgro.SetBool("Ataca", true);
+        animOgro2.SetBool("Ataca", true);
+        animOgro3.SetBool("Ataca", true);
+        animOgro4.SetBool("Ataca", true);
+        animRey.SetBool("Erraste", true);
        
 
     }
     IEnumerator AtaqueEnemigo()
     {
-        
-        Ataque.GetComponent<Button>().interactable = false;
-        Escape.GetComponent<Button>().interactable = false;
-        yield return new WaitForSeconds(1);
-        //Debug.Log("Perdiste vida");
-        yield return new WaitForSeconds(1);
-        //Debug.Log("volves a tener el control");
-        Ataque.GetComponent<Button>().interactable = true;
-        Escape.GetComponent<Button>().interactable = true;
+        yield return new WaitForSeconds(1.5f);
+        animOgro.SetBool("Ataca", false);
+        animOgro2.SetBool("Ataca", false);
+        animOgro3.SetBool("Ataca", false);
+        animOgro4.SetBool("Ataca", false);
+        animRey.SetBool("Erraste", false);
     }
 
     IEnumerator CambiandoEscena()
@@ -194,5 +202,6 @@ public class Life : MonoBehaviour
     public void Resetearbooleano()
     {
         isPressed = false;
+        
     }
 }
