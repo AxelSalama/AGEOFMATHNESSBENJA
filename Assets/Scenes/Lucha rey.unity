@@ -1919,6 +1919,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   Res: {fileID: 701222964}
+  animOgro: {fileID: 0}
+  animOgro2: {fileID: 0}
+  animOgro3: {fileID: 0}
+  animOgro4: {fileID: 0}
+  animRey: {fileID: 1942592699}
   correcta: 0
   player: {fileID: 0}
   Ataque: {fileID: 1031176407}
@@ -1946,6 +1951,7 @@ MonoBehaviour:
   datosenemigos: {fileID: 0}
   enemyPrefab: {fileID: 0}
   Res: {fileID: 701222964}
+  animJugador: {fileID: 1679559880}
   correcta: 0
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
@@ -1955,11 +1961,31 @@ MonoBehaviour:
   Elfo: {fileID: 0}
   Ogro: {fileID: 0}
   Duende: {fileID: 0}
+  Duende2: {fileID: 0}
   Rey: {fileID: 329726309}
+  EnemigoResta1: {fileID: 0}
+  EnemigoResta2: {fileID: 0}
+  EnemigoResta3: {fileID: 0}
+  EnemigoMulti1: {fileID: 0}
+  EnemigoMulti2: {fileID: 0}
+  EnemigoMulti3: {fileID: 0}
+  EnemigoDivi1: {fileID: 0}
+  EnemigoDivi2: {fileID: 0}
+  EnemigoDivi3: {fileID: 0}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
+  duende2: {fileID: 0}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
   rey: {fileID: 11400000, guid: aee848d0642118e4d98f0cb588a37934, type: 2}
+  enemigoresta1: {fileID: 0}
+  enemigoresta2: {fileID: 0}
+  enemigoresta3: {fileID: 0}
+  enemigomulti1: {fileID: 0}
+  enemigomulti2: {fileID: 0}
+  enemigomulti3: {fileID: 0}
+  enemigodivi1: {fileID: 0}
+  enemigodivi2: {fileID: 0}
+  enemigodivi3: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &164638594
 GameObject:
@@ -3017,6 +3043,7 @@ MonoBehaviour:
   datosenemigos: {fileID: 0}
   enemyPrefab: {fileID: 0}
   Res: {fileID: 701222964}
+  animJugador: {fileID: 1679559880}
   correcta: 0
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
@@ -3026,11 +3053,31 @@ MonoBehaviour:
   Elfo: {fileID: 0}
   Ogro: {fileID: 0}
   Duende: {fileID: 0}
+  Duende2: {fileID: 0}
   Rey: {fileID: 329726309}
+  EnemigoResta1: {fileID: 0}
+  EnemigoResta2: {fileID: 0}
+  EnemigoResta3: {fileID: 0}
+  EnemigoMulti1: {fileID: 0}
+  EnemigoMulti2: {fileID: 0}
+  EnemigoMulti3: {fileID: 0}
+  EnemigoDivi1: {fileID: 0}
+  EnemigoDivi2: {fileID: 0}
+  EnemigoDivi3: {fileID: 0}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
+  duende2: {fileID: 0}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
   rey: {fileID: 11400000, guid: aee848d0642118e4d98f0cb588a37934, type: 2}
+  enemigoresta1: {fileID: 0}
+  enemigoresta2: {fileID: 0}
+  enemigoresta3: {fileID: 0}
+  enemigomulti1: {fileID: 0}
+  enemigomulti2: {fileID: 0}
+  enemigomulti3: {fileID: 0}
+  enemigodivi1: {fileID: 0}
+  enemigodivi2: {fileID: 0}
+  enemigodivi3: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &270585005
 MonoBehaviour:
@@ -6224,6 +6271,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   Res: {fileID: 701222964}
+  animOgro: {fileID: 0}
+  animOgro2: {fileID: 0}
+  animOgro3: {fileID: 0}
+  animOgro4: {fileID: 0}
+  animRey: {fileID: 1942592699}
   correcta: 0
   player: {fileID: 0}
   Ataque: {fileID: 1031176407}
@@ -6981,6 +7033,7 @@ MonoBehaviour:
   datosenemigos: {fileID: 0}
   enemyPrefab: {fileID: 0}
   Res: {fileID: 701222964}
+  animJugador: {fileID: 0}
   correcta: 0
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
@@ -6990,11 +7043,31 @@ MonoBehaviour:
   Elfo: {fileID: 0}
   Ogro: {fileID: 0}
   Duende: {fileID: 0}
+  Duende2: {fileID: 0}
   Rey: {fileID: 329726309}
+  EnemigoResta1: {fileID: 0}
+  EnemigoResta2: {fileID: 0}
+  EnemigoResta3: {fileID: 0}
+  EnemigoMulti1: {fileID: 0}
+  EnemigoMulti2: {fileID: 0}
+  EnemigoMulti3: {fileID: 0}
+  EnemigoDivi1: {fileID: 0}
+  EnemigoDivi2: {fileID: 0}
+  EnemigoDivi3: {fileID: 0}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
+  duende2: {fileID: 0}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
   rey: {fileID: 11400000, guid: aee848d0642118e4d98f0cb588a37934, type: 2}
+  enemigoresta1: {fileID: 0}
+  enemigoresta2: {fileID: 0}
+  enemigoresta3: {fileID: 0}
+  enemigomulti1: {fileID: 0}
+  enemigomulti2: {fileID: 0}
+  enemigomulti3: {fileID: 0}
+  enemigodivi1: {fileID: 0}
+  enemigodivi2: {fileID: 0}
+  enemigodivi3: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!4 &628352315
 Transform:
@@ -8463,6 +8536,7 @@ MonoBehaviour:
   datosenemigos: {fileID: 0}
   enemyPrefab: {fileID: 0}
   Res: {fileID: 701222964}
+  animJugador: {fileID: 0}
   correcta: 0
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
@@ -8472,11 +8546,31 @@ MonoBehaviour:
   Elfo: {fileID: 0}
   Ogro: {fileID: 0}
   Duende: {fileID: 0}
+  Duende2: {fileID: 0}
   Rey: {fileID: 329726309}
+  EnemigoResta1: {fileID: 0}
+  EnemigoResta2: {fileID: 0}
+  EnemigoResta3: {fileID: 0}
+  EnemigoMulti1: {fileID: 0}
+  EnemigoMulti2: {fileID: 0}
+  EnemigoMulti3: {fileID: 0}
+  EnemigoDivi1: {fileID: 0}
+  EnemigoDivi2: {fileID: 0}
+  EnemigoDivi3: {fileID: 0}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
+  duende2: {fileID: 0}
   elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
   rey: {fileID: 11400000, guid: aee848d0642118e4d98f0cb588a37934, type: 2}
+  enemigoresta1: {fileID: 0}
+  enemigoresta2: {fileID: 0}
+  enemigoresta3: {fileID: 0}
+  enemigomulti1: {fileID: 0}
+  enemigomulti2: {fileID: 0}
+  enemigomulti3: {fileID: 0}
+  enemigodivi1: {fileID: 0}
+  enemigodivi2: {fileID: 0}
+  enemigodivi3: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &707397432
 GameObject:
@@ -12639,6 +12733,7 @@ MonoBehaviour:
   x: 0
   y: 0
   velCorrer: 50
+  persistidor: {fileID: 0}
   rb: {fileID: 988381414}
   fuerzaDeSalto: 12
   puedoSaltar: 0

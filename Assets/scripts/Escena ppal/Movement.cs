@@ -10,7 +10,8 @@ public class Movement : MonoBehaviour
     public Animator anim;
     public float x, y;
     public int velCorrer;
-    public Persistator persistidor;
+    public PosicionData posdaton;
+    public bool posicionado;
 
 
     public Rigidbody rb;
@@ -21,7 +22,12 @@ public class Movement : MonoBehaviour
     {
         Cursor.visible = false;
         puedoSaltar = false;
-        gameObject.transform.position = persistidor.PosicionFinal;
+        posdaton.posicionFinal = gameObject.transform.position;
+        if(posdaton.posicionado == true)
+        {
+            gameObject.transform.position = posdaton.posicionFinal;
+            posdaton.posicionado = false;
+        }
     }
 
 
@@ -104,12 +110,17 @@ public class Movement : MonoBehaviour
             velocidadRotacion = 0;
             velCorrer = 0;
             PlayerPrefs.SetInt("valor", Other.gameObject.GetComponent<enemigo>().enemydata.orden);
-            gameObject.transform.position = persistidor.PosicionFinal;
+            posdaton.posicionFinal = gameObject.transform.position;
+            posdaton.posicionado = true;
         }
         if (Other.gameObject.tag == "castillo")
         {
             SceneManager.LoadScene("roma");
         }
+    }
+    private void OnCollisionEnter(Collision Other)
+    {
+        
     }
 
 }

@@ -1763,6 +1763,50 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 270585003}
+        m_MethodName: reseteoBool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 701222967}
+        m_MethodName: reseteoBool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 628352314}
+        m_MethodName: reseteoBool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 604401808}
+        m_MethodName: Resetearbooleano
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &162293392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1844,17 +1888,17 @@ MonoBehaviour:
   datosenemigos: {fileID: 0}
   enemyPrefab: {fileID: 0}
   Res: {fileID: 701222964}
-  animJugador: {fileID: 0}
+  animJugador: {fileID: 1679559880}
   correcta: 0
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
   isPressed: 0
   slider: {fileID: 270585005}
-  Elfo: {fileID: 0}
-  Ogro: {fileID: 0}
-  Duende: {fileID: 0}
-  Duende2: {fileID: 0}
+  Duende: {fileID: 1322021533}
+  Duende2: {fileID: 1455430466}
+  Duende3: {fileID: 1432544184}
+  Duende4: {fileID: 1361847833}
   Rey: {fileID: 0}
   EnemigoResta1: {fileID: 0}
   EnemigoResta2: {fileID: 0}
@@ -1865,10 +1909,10 @@ MonoBehaviour:
   EnemigoDivi1: {fileID: 0}
   EnemigoDivi2: {fileID: 0}
   EnemigoDivi3: {fileID: 0}
-  ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
-  duende2: {fileID: 0}
-  elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  duende2: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  duende3: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
+  duende4: {fileID: 11400000, guid: ddb9ab3f9f5afa84e8e06e9ae5585409, type: 2}
   rey: {fileID: 0}
   enemigoresta1: {fileID: 0}
   enemigoresta2: {fileID: 0}
@@ -3236,10 +3280,10 @@ MonoBehaviour:
   operacion: {fileID: 164638597}
   isPressed: 0
   slider: {fileID: 270585005}
-  Elfo: {fileID: 0}
-  Ogro: {fileID: 0}
-  Duende: {fileID: 0}
-  Duende2: {fileID: 0}
+  Duende: {fileID: 1322021533}
+  Duende2: {fileID: 1455430466}
+  Duende3: {fileID: 1432544184}
+  Duende4: {fileID: 1361847833}
   Rey: {fileID: 0}
   EnemigoResta1: {fileID: 0}
   EnemigoResta2: {fileID: 0}
@@ -3250,10 +3294,10 @@ MonoBehaviour:
   EnemigoDivi1: {fileID: 0}
   EnemigoDivi2: {fileID: 0}
   EnemigoDivi3: {fileID: 0}
-  ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
-  duende2: {fileID: 0}
-  elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  duende2: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  duende3: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
+  duende4: {fileID: 11400000, guid: ddb9ab3f9f5afa84e8e06e9ae5585409, type: 2}
   rey: {fileID: 0}
   enemigoresta1: {fileID: 0}
   enemigoresta2: {fileID: 0}
@@ -6073,10 +6117,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aa43115a817b7d4d8d7808bd2282778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Elfo: {fileID: 1322021533}
-  Ogro: {fileID: 1455430466}
-  Duende: {fileID: 1432544184}
-  Duende2: {fileID: 1361847833}
+  Duende: {fileID: 1322021533}
+  Duende2: {fileID: 1455430466}
+  Duende3: {fileID: 1432544184}
+  Duende4: {fileID: 1361847833}
+  Duendecin1: {fileID: 1297728221}
+  Duendecin2: {fileID: 754020108}
+  Duendecin3: {fileID: 1150617543}
+  Duendecin4: {fileID: 1560694725}
 --- !u!1001 &614409340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6248,17 +6296,17 @@ MonoBehaviour:
   datosenemigos: {fileID: 0}
   enemyPrefab: {fileID: 0}
   Res: {fileID: 701222964}
-  animJugador: {fileID: 0}
+  animJugador: {fileID: 1679559880}
   correcta: 0
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
   isPressed: 0
   slider: {fileID: 270585005}
-  Elfo: {fileID: 0}
-  Ogro: {fileID: 0}
-  Duende: {fileID: 0}
-  Duende2: {fileID: 0}
+  Duende: {fileID: 1322021533}
+  Duende2: {fileID: 1455430466}
+  Duende3: {fileID: 1432544184}
+  Duende4: {fileID: 1361847833}
   Rey: {fileID: 0}
   EnemigoResta1: {fileID: 0}
   EnemigoResta2: {fileID: 0}
@@ -6269,10 +6317,10 @@ MonoBehaviour:
   EnemigoDivi1: {fileID: 0}
   EnemigoDivi2: {fileID: 0}
   EnemigoDivi3: {fileID: 0}
-  ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
-  duende2: {fileID: 0}
-  elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  duende2: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  duende3: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
+  duende4: {fileID: 11400000, guid: ddb9ab3f9f5afa84e8e06e9ae5585409, type: 2}
   rey: {fileID: 0}
   enemigoresta1: {fileID: 0}
   enemigoresta2: {fileID: 0}
@@ -7143,17 +7191,17 @@ MonoBehaviour:
   datosenemigos: {fileID: 0}
   enemyPrefab: {fileID: 0}
   Res: {fileID: 701222964}
-  animJugador: {fileID: 0}
+  animJugador: {fileID: 1679559880}
   correcta: 0
   Cuenta1: {fileID: 803102301}
   Cuenta2: {fileID: 698825152}
   operacion: {fileID: 164638597}
   isPressed: 0
   slider: {fileID: 270585005}
-  Elfo: {fileID: 0}
-  Ogro: {fileID: 0}
-  Duende: {fileID: 0}
-  Duende2: {fileID: 0}
+  Duende: {fileID: 1322021533}
+  Duende2: {fileID: 1455430466}
+  Duende3: {fileID: 1432544184}
+  Duende4: {fileID: 1361847833}
   Rey: {fileID: 0}
   EnemigoResta1: {fileID: 0}
   EnemigoResta2: {fileID: 0}
@@ -7164,10 +7212,10 @@ MonoBehaviour:
   EnemigoDivi1: {fileID: 0}
   EnemigoDivi2: {fileID: 0}
   EnemigoDivi3: {fileID: 0}
-  ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
-  duende2: {fileID: 0}
-  elfo: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  duende2: {fileID: 11400000, guid: e72223f9279076c448f81c85aeea7dd0, type: 2}
+  duende3: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
+  duende4: {fileID: 11400000, guid: ddb9ab3f9f5afa84e8e06e9ae5585409, type: 2}
   rey: {fileID: 0}
   enemigoresta1: {fileID: 0}
   enemigoresta2: {fileID: 0}
@@ -10836,6 +10884,8 @@ MonoBehaviour:
   x: 0
   y: 0
   velCorrer: 50
+  posdaton: {fileID: 0}
+  posicionado: 0
   rb: {fileID: 988381414}
   fuerzaDeSalto: 12
   puedoSaltar: 0

@@ -10,6 +10,8 @@ public class EligeResp : MonoBehaviour
     public NroRandom nrorandom;
     public int contador;
     public Text puntaje;
+    public GameObject reja;
+    public GameObject triggon;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +24,11 @@ public class EligeResp : MonoBehaviour
     {
         puntaje.text = "Puntaje = "+contador.ToString();
 
-        if (contador > 9)
+        if (contador > 2)
         {
-            //aca se abre la puerta al castillo y te deja pasar
-            SceneManager.LoadScene("Lucha rey");
+            reja.SetActive(false);
+            triggon.SetActive(true);
+            
         }
     }
 

@@ -25,10 +25,10 @@ public class EnemyLife : MonoBehaviour
     public bool isPressed;
     public Slider slider;
 
-    public GameObject Elfo;
-    public GameObject Ogro;
     public GameObject Duende;
     public GameObject Duende2;
+    public GameObject Duende3;
+    public GameObject Duende4;
     public GameObject Rey;
     public GameObject EnemigoResta1;
     public GameObject EnemigoResta2;
@@ -39,10 +39,10 @@ public class EnemyLife : MonoBehaviour
     public GameObject EnemigoDivi1;
     public GameObject EnemigoDivi2;
     public GameObject EnemigoDivi3;
-    public EnemyData ogro;
     public EnemyData duende;
     public EnemyData duende2;
-    public EnemyData elfo;
+    public EnemyData duende3;
+    public EnemyData duende4;
     public EnemyData rey;
     public EnemyData enemigoresta1;
     public EnemyData enemigoresta2;
@@ -74,18 +74,18 @@ public class EnemyLife : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("valor") == 2)
         {
-            datosenemigos = elfo;
-            enemyPrefab = Elfo;
+            datosenemigos = duende2;
+            enemyPrefab = Duende2;
         }
         if (PlayerPrefs.GetInt("valor") == 3)
         {
-            datosenemigos = ogro;
-            enemyPrefab = Ogro;
+            datosenemigos = duende3;
+            enemyPrefab = Duende3;
         }
         if (PlayerPrefs.GetInt("valor") == 4)
         {
-            datosenemigos = duende2;
-            enemyPrefab = Duende2;
+            datosenemigos = duende4;
+            enemyPrefab = Duende4;
         }
         if (PlayerPrefs.GetInt("valor") == 7)
         {
@@ -222,6 +222,10 @@ public class EnemyLife : MonoBehaviour
         {
             SceneManager.LoadScene("Reino divi");
         }
+        else if (sceneName == "Lucha rey")
+        {
+            SceneManager.LoadScene("Reino resta");
+        }
     }
     int resul;
     bool divi;
@@ -268,5 +272,6 @@ public class EnemyLife : MonoBehaviour
     public void reseteoBool()
     {
         isPressed = false;
+        Debug.Log("Corre");
     }
 }

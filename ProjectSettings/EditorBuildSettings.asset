@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Reino resta.unity
     guid: 6e63d28c4fcf80749af9f6a0fb79021c
   - enabled: 1
+    path: Assets/Scenes/Lucha rey.unity
+    guid: 12359e93665b57649ad23b23583e49b1
+  - enabled: 1
     path: Assets/Scenes/Reino suma.unity
     guid: 7aec2895d11913f419b17ba31db147bd
   - enabled: 1

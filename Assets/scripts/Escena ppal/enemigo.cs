@@ -11,7 +11,7 @@ public class enemigo : MonoBehaviour
     {
         if(enemydata.derrotado == true)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
     void OnTriggerEnter(Collider col)
@@ -19,7 +19,7 @@ public class enemigo : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             PlayerPrefs.SetInt("valor", GetComponent<enemigo>().enemydata.orden);
-            //SceneManager.LoadScene("Lucha");
+            
         }
     }
 }
