@@ -114,6 +114,8 @@ MonoBehaviour:
   x: 0
   y: 0
   velCorrer: 50
+  posdaton: {fileID: 11400000, guid: d709ec145f8c9d74484a5bc4c97b1913, type: 2}
+  posicionado: 0
   rb: {fileID: 4440755707905068004}
   fuerzaDeSalto: 12
   puedoSaltar: 0

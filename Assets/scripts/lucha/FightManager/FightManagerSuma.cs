@@ -16,29 +16,29 @@ public class FightManagerSuma : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("valor") == 1)
         {
-            Instantiate(Duende, new Vector3(14, 6, 9), Quaternion.identity);
-            Duendecin1.transform.eulerAngles = new Vector3(0, -90, 0);
-            Duende.transform.localScale = new Vector3(1, 1, 1);
+            Duende.transform.position = new Vector3(14, 6, 9);
+            //Instantiate(Duende, new Vector3(14, 6, 9), Quaternion.identity);
+            //Duendecin1.transform.eulerAngles = new Vector3(0, -90, 0);
+            //Duende.transform.localScale = new Vector3(1, 1, 1);
             
         }
         if (PlayerPrefs.GetInt("valor") == 2)
         {
-            Instantiate(Duende2, new Vector3(14, 6, 9), Quaternion.identity);
-            Duendecin2.transform.eulerAngles = new Vector3(0, -90, 0);
-            Duende2.transform.localScale = new Vector3(1, 1, 1);
+            Duende2.transform.position = new Vector3(14, 7, 9);
+            //Instantiate(Duende2, new Vector3(14, 6, 9), Quaternion.identity);
+            //Duendecin2.transform.eulerAngles = new Vector3(0, -90, 0);
+            //Duende2.transform.localScale = new Vector3(1, 1, 1);
         }
         if (PlayerPrefs.GetInt("valor") == 3)
         {
-            Instantiate(Duende3, new Vector3(14, 6, 9), Quaternion.identity);
-            Duendecin3.transform.eulerAngles = new Vector3(0, -90, 0);
-            Duende3.transform.localScale = new Vector3(1, 1, 1);
+            Duende3.transform.position = new Vector3(14, 0, 9);
+            //Instantiate(Duende3, new Vector3(14, 6, 9), Quaternion.identity);
+            //Duendecin3.transform.eulerAngles = new Vector3(0, -90, 0);
+            //Duende3.transform.localScale = new Vector3(1, 1, 1);
         }
         if (PlayerPrefs.GetInt("valor") == 4)
         {
-            Duende.transform.position = new Vector3(14, 6, 9);
-            //Instantiate(Duende4, new Vector3(14, 0, 9), Quaternion.identity);
-            //Duendecin4.transform.localEulerAngles = new Vector3(-90, -90, 0);
-            //Duende4.transform.localScale = new Vector3(1, 1, 1);
+            Duende4.transform.position = new Vector3(14, 0, 9);
         }
     }
 }

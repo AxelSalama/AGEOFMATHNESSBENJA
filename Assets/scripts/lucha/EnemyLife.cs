@@ -87,6 +87,11 @@ public class EnemyLife : MonoBehaviour
             datosenemigos = duende4;
             enemyPrefab = Duende4;
         }
+        if(PlayerPrefs.GetInt("valor") == 6)
+        {
+            datosenemigos = rey;
+            enemyPrefab = Rey;
+        }
         if (PlayerPrefs.GetInt("valor") == 7)
         {
             datosenemigos = enemigoresta1;
@@ -272,6 +277,5 @@ public class EnemyLife : MonoBehaviour
     public void reseteoBool()
     {
         isPressed = false;
-        Debug.Log("Corre");
     }
 }

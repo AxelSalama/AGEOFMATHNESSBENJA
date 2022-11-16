@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     public float x, y;
     public int velCorrer;
     public PosicionData posdaton;
-    public bool posicionado;
+    public bool primeraVez = true;
 
 
     public Rigidbody rb;
@@ -22,12 +22,13 @@ public class Movement : MonoBehaviour
     {
         Cursor.visible = false;
         puedoSaltar = false;
-        posdaton.posicionFinal = gameObject.transform.position;
+        posdaton.posicionado = true;
         if(posdaton.posicionado == true)
         {
-            gameObject.transform.position = posdaton.posicionFinal;
+            posdaton.posicionFinal = gameObject.transform.position;
             posdaton.posicionado = false;
         }
+        gameObject.transform.position = posdaton.posicionFinal;
     }
 
 
@@ -58,7 +59,7 @@ public class Movement : MonoBehaviour
 
         if (transform.position.y <= -2)
         {
-            transform.position = new Vector3(0, 5, 0) ;
+            transform.position = new Vector3(0, 5, 0);
         }
 
         x = Input.GetAxis("Horizontal");
@@ -101,7 +102,7 @@ public class Movement : MonoBehaviour
     //    transform.Translate(0, 0, y * Time.deltaTime * velocidadMovimiento * 2);
     //}
 
-    
+
     private void OnTriggerEnter(Collider Other)
     {
         if (Other.gameObject.tag == "Enemigo")
@@ -118,11 +119,6 @@ public class Movement : MonoBehaviour
             SceneManager.LoadScene("roma");
         }
     }
-    private void OnCollisionEnter(Collision Other)
-    {
-        
-    }
-
 }
 
 

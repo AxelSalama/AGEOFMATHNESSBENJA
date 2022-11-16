@@ -28,7 +28,7 @@ public class EligeResp : MonoBehaviour
         {
             reja.SetActive(false);
             triggon.SetActive(true);
-            
+            SceneManager.LoadScene("Lucha rey");
         }
     }
 
@@ -56,6 +56,14 @@ public class EligeResp : MonoBehaviour
             nrorandom.MezclarOpciones();
             
             contador++;
+        }
+    }
+    private void OnCollisionEnter(Collision Other)
+    {
+        if (Other.gameObject.tag == "triggerReja")
+        {
+            SceneManager.LoadScene("Lucha rey");
+            Debug.Log("entraste");
         }
     }
 }
