@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public Animator anim;
     public float x, y;
     public int velCorrer;
+    public Persistator persistidor;
 
 
     public Rigidbody rb;
@@ -20,6 +21,7 @@ public class Movement : MonoBehaviour
     {
         Cursor.visible = false;
         puedoSaltar = false;
+        gameObject.transform.position = persistidor.PosicionFinal;
     }
 
 
@@ -102,15 +104,12 @@ public class Movement : MonoBehaviour
             velocidadRotacion = 0;
             velCorrer = 0;
             PlayerPrefs.SetInt("valor", Other.gameObject.GetComponent<enemigo>().enemydata.orden);
-            
+            gameObject.transform.position = persistidor.PosicionFinal;
         }
         if (Other.gameObject.tag == "castillo")
         {
-            SceneManager.LoadScene("Reino resta");
+            SceneManager.LoadScene("Roma");
         }
-
-
-        //}
     }
 
 }
