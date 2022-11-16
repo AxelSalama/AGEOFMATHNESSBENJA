@@ -1963,6 +1963,9 @@ MonoBehaviour:
   EnemigoMulti1: {fileID: 932914938}
   EnemigoMulti2: {fileID: 1904953869}
   EnemigoMulti3: {fileID: 338755254}
+  EnemigoDivi1: {fileID: 0}
+  EnemigoDivi2: {fileID: 0}
+  EnemigoDivi3: {fileID: 0}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   duende2: {fileID: 0}
@@ -1974,6 +1977,9 @@ MonoBehaviour:
   enemigomulti1: {fileID: 11400000, guid: 8b3b097b0463bbb4a855f4f8d4a8780f, type: 2}
   enemigomulti2: {fileID: 11400000, guid: b8eb0e48c94cd48489a465f62e0d4270, type: 2}
   enemigomulti3: {fileID: 11400000, guid: bcd543e713c8e1144b66643ec95e0b7f, type: 2}
+  enemigodivi1: {fileID: 0}
+  enemigodivi2: {fileID: 0}
+  enemigodivi3: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &164638594
 GameObject:
@@ -3048,6 +3054,9 @@ MonoBehaviour:
   EnemigoMulti1: {fileID: 0}
   EnemigoMulti2: {fileID: 0}
   EnemigoMulti3: {fileID: 0}
+  EnemigoDivi1: {fileID: 0}
+  EnemigoDivi2: {fileID: 0}
+  EnemigoDivi3: {fileID: 0}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   duende2: {fileID: 0}
@@ -3059,6 +3068,9 @@ MonoBehaviour:
   enemigomulti1: {fileID: 11400000, guid: 8b3b097b0463bbb4a855f4f8d4a8780f, type: 2}
   enemigomulti2: {fileID: 11400000, guid: b8eb0e48c94cd48489a465f62e0d4270, type: 2}
   enemigomulti3: {fileID: 11400000, guid: bcd543e713c8e1144b66643ec95e0b7f, type: 2}
+  enemigodivi1: {fileID: 0}
+  enemigodivi2: {fileID: 0}
+  enemigodivi3: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!114 &270585005
 MonoBehaviour:
@@ -4966,7 +4978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: aa95d9efb14d4ef45ae0daf6c6ba5749, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: aa95d9efb14d4ef45ae0daf6c6ba5749, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5277,7 +5289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7475,6 +7487,9 @@ MonoBehaviour:
   EnemigoMulti1: {fileID: 1322021533}
   EnemigoMulti2: {fileID: 1455430466}
   EnemigoMulti3: {fileID: 1432544184}
+  EnemigoDivi1: {fileID: 0}
+  EnemigoDivi2: {fileID: 0}
+  EnemigoDivi3: {fileID: 0}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   duende2: {fileID: 0}
@@ -7486,6 +7501,9 @@ MonoBehaviour:
   enemigomulti1: {fileID: 11400000, guid: 8b3b097b0463bbb4a855f4f8d4a8780f, type: 2}
   enemigomulti2: {fileID: 11400000, guid: b8eb0e48c94cd48489a465f62e0d4270, type: 2}
   enemigomulti3: {fileID: 11400000, guid: bcd543e713c8e1144b66643ec95e0b7f, type: 2}
+  enemigodivi1: {fileID: 0}
+  enemigodivi2: {fileID: 0}
+  enemigodivi3: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!4 &628352315
 Transform:
@@ -7887,7 +7905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: e8c3c1d727a941b48a6f5e79f08a10a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e8c3c1d727a941b48a6f5e79f08a10a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8975,6 +8993,9 @@ MonoBehaviour:
   EnemigoMulti1: {fileID: 932914938}
   EnemigoMulti2: {fileID: 1904953869}
   EnemigoMulti3: {fileID: 338755254}
+  EnemigoDivi1: {fileID: 0}
+  EnemigoDivi2: {fileID: 0}
+  EnemigoDivi3: {fileID: 0}
   ogro: {fileID: 11400000, guid: 942e56f0fa670e742abc8e4563219de8, type: 2}
   duende: {fileID: 11400000, guid: 3661b50e22b51c84f972c27ca72b3421, type: 2}
   duende2: {fileID: 0}
@@ -8986,6 +9007,9 @@ MonoBehaviour:
   enemigomulti1: {fileID: 11400000, guid: 8b3b097b0463bbb4a855f4f8d4a8780f, type: 2}
   enemigomulti2: {fileID: 11400000, guid: b8eb0e48c94cd48489a465f62e0d4270, type: 2}
   enemigomulti3: {fileID: 11400000, guid: bcd543e713c8e1144b66643ec95e0b7f, type: 2}
+  enemigodivi1: {fileID: 0}
+  enemigodivi2: {fileID: 0}
+  enemigodivi3: {fileID: 0}
   nivel: {fileID: 11400000, guid: 385f660d19806674fa7c312fd373e6c6, type: 2}
 --- !u!1 &707397432
 GameObject:
@@ -16308,7 +16332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 45a071b6d205c1e4295d231282ba8743, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 45a071b6d205c1e4295d231282ba8743, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17754,7 +17778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: aa95d9efb14d4ef45ae0daf6c6ba5749, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: aa95d9efb14d4ef45ae0daf6c6ba5749, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18742,7 +18766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 560da599470559844bcc8fbcde36e8bc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 560da599470559844bcc8fbcde36e8bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20982,7 +21006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e08795232a9a04642be50283ca847dc0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e08795232a9a04642be50283ca847dc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21421,7 +21445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21654,7 +21678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: e8c3c1d727a941b48a6f5e79f08a10a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e8c3c1d727a941b48a6f5e79f08a10a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21881,7 +21905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 48d3db558125593409c83e3243d4a2fb, type: 3}
       propertyPath: m_LocalPosition.x
