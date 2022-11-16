@@ -25,7 +25,7 @@ public class EligeResp : MonoBehaviour
         if (contador > 9)
         {
             //aca se abre la puerta al castillo y te deja pasar
-            SceneManager.LoadScene("Reino multi");
+            SceneManager.LoadScene("Lucha rey");
         }
     }
 

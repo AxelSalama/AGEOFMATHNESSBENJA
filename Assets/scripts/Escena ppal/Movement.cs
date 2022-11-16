@@ -108,7 +108,7 @@ public class Movement : MonoBehaviour
         }
         if (Other.gameObject.tag == "castillo")
         {
-            SceneManager.LoadScene("Roma");
+            SceneManager.LoadScene("roma");
         }
     }
 
