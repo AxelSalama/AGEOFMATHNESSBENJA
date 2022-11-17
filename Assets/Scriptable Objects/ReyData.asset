@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21178aadef85a35478bd985ac5534e5d, type: 3}
   m_Name: ReyData
   m_EditorClassIdentifier: 
-  derrotado: 1
+  derrotado: 0
   orden: 6
